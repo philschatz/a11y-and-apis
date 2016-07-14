@@ -34,18 +34,14 @@ Source https://github.com/Connexions/webview/blob/master/src/scripts/router.coff
 - `https://cnx.org/users/role-acceptance`
 - `https://cnx.org/workspace`
 - `https://cnx.org/contents/...`
-  - `1*2*2*2*2*2*2*2 = 128` variations (from the regexp below)
+  - `1*2*2*2*2*2*2*2 = 128` variations (from https://github.com/Connexions/webview/blob/master/src/scripts/helpers/links.coffee#L10-L22)
+
 ```
-    ///
-    ([^:@/]+)     # uuid up to delimiter
-    @?            # Optional @
-    ([^:/?]*)     # Revision
-    :?            # Optional :
-    ([^/?]*)      # Page number or uuid
-    /?            # Optional /
-    ([^?]*)       # Segment of title
-    (\?.*)?       # params (optional)
-    ///
+the `:` and page number might always go together
+and probably the `/` and title
+although i think the `/` is separate because you could do `uuid`, `uuid/` or `uuid/title`
+`@` and revision probably go together
+16 is probably a more reasonable estimate of actual permutations
 ```
 
 # openstax.org
