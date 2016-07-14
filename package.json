@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "chromedriver": "^2.21.2",
+    "selenium-webdriver": "^2.53.3"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "ava": {
+    "concurrency": 3,
+    "verbose": true
+  }
+}
