@@ -13,6 +13,10 @@ Selenium will:
 - log time it took (maybe the testing framework does this for free)
 
 
+# To Run
+
+- `npm install` to install dependencies
+- `npm test`
 
 
 # cnx.org
