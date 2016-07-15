@@ -4,7 +4,7 @@ import test from 'ava';
 import selenium from 'selenium-webdriver';
 import chrome from 'selenium-webdriver/chrome';
 
-const DEFAULT_TIMEOUT = 2 * 60 * 1000; // both openstax (consistently) AND tutor (occasionally) are failing with 60sec
+const DEFAULT_TIMEOUT = 10 * 1000; // wait 10sec before failing a test (change this if doing performance tests)
 const WINDOW_WIDTH = 1024;
 const WINDOW_HEIGHT = 768;
 const SCREENSHOT_PATH = path.join(__dirname, '../screenshots/');
@@ -15,11 +15,11 @@ const builder = new selenium.Builder()
 
 const driver = builder.build();
 
-test.after(async t => {
+test.after.always(async t => {
   await driver.quit();
 });
 
-test.afterEach(async t => {
+test.afterEach.always(async t => {
   // Sleep for 50ms before taking a screenshot so CSS animations finish
   // await driver.sleep(50);
 
@@ -62,8 +62,9 @@ async function findSuccessText(t, successText) {
   await driver.wait(async () => {
     // find the body element
     const body = await driver.findElement({css: 'body'});
+    const isTutorLoading = await driver.isElementPresent({css: '.is-loading, .calendar-loading'});
     const text = await body.getText();
-    return text.includes(successText) && !text.toLowerCase().includes('loading');
+    return text.includes(successText) && !isTutorLoading && !text.toLowerCase().includes('loading');
   }, DEFAULT_TIMEOUT);
 }
 

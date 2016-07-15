@@ -24,7 +24,7 @@ export function tutorLogin(LOGIN_URL_PATTERN, CONFIG) {
 
   });
 
-  test.afterEach(async () => {
+  test.afterEach.always(async () => {
     // TODO: Close if there is an alert open
   });
 
