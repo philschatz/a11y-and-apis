@@ -156,3 +156,6 @@ Source: https://github.com/openstax/tutor-js/blob/master/src/router.cjsx
   - text to check for success/failure
   - optional time to wait (5sec)
 - [ ] make a CI webhook that detects whenever these router files have changed and add a comment on the PR suggesting that this repo be updated
+
+
+- [ ] select based on `:not(.loading)`, maybe sleep a bit before making screenshots

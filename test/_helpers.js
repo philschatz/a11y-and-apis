@@ -1,12 +1,17 @@
+import fs from 'fs';
+import path from 'path';
 import test from 'ava';
 import selenium from 'selenium-webdriver';
 import chrome from 'selenium-webdriver/chrome';
 
-const {until} = selenium;
+const DEFAULT_TIMEOUT = 2 * 60 * 1000; // both openstax (consistently) AND tutor (occasionally) are failing with 60sec
+const WINDOW_WIDTH = 1024;
+const WINDOW_HEIGHT = 768;
+const SCREENSHOT_PATH = path.join(__dirname, '../screenshots/');
 
 const builder = new selenium.Builder()
-  .withCapabilities(selenium.Capabilities.phantomjs())
-  .withCapabilities(selenium.Capabilities.chrome());
+  // .withCapabilities(selenium.Capabilities.chrome())
+  .withCapabilities(selenium.Capabilities.phantomjs());
 
 const driver = builder.build();
 
@@ -14,7 +19,31 @@ test.after(async t => {
   await driver.quit();
 });
 
+test.afterEach(async t => {
+  // Sleep for 50ms before taking a screenshot so CSS animations finish
+  // await driver.sleep(50);
 
+  const data = await driver.takeScreenshot();
+  const base64Data = data.replace(/^data:image\/png;base64,/, "");
+
+  const filename = t.title
+    .replace(/^afterEach\ for\ /, '') // ava prepends the test name to this string
+    .replace(/http(s?)\:\/\//, '') // remove the leading `https://`
+    .replace(/[\ \/\:\.]/g, '_');  // replace ` /:.` in URLs with underscore
+
+
+  // Make sure the screenshot returns a promise
+  return new selenium.promise.Promise((resolve, reject) => {
+    fs.writeFile(`${SCREENSHOT_PATH}/${filename}.png`, base64Data, 'base64', (err) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(true);
+      }
+    });
+  });
+
+})
 
 // Convert URLs patterns like 'https://cnx.org/contents/:uuid' into a real URL using `values`
 function makeUrl(pattern, values={}) {
@@ -28,19 +57,20 @@ function makeUrl(pattern, values={}) {
 async function findSuccessText(t, successText) {
   // const {driver} = t.context;
   // wait for the body element
-  await driver.wait(selenium.until.elementLocated({css: 'body'}));
+  await driver.wait(selenium.until.elementLocated({css: 'body'}), DEFAULT_TIMEOUT);
   // wait until the successText is present
   await driver.wait(async () => {
     // find the body element
     const body = await driver.findElement({css: 'body'});
     const text = await body.getText();
-    return text.includes(successText);
-  });
+    return text.includes(successText) && !text.toLowerCase().includes('loading');
+  }, DEFAULT_TIMEOUT);
 }
 
 async function macro(t, pattern, successText, values) {
   const url = makeUrl(pattern, values);
   // const {driver} = t.context;
+  await driver.manage().window().setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
   // open the page
   await driver.get(url);
   await findSuccessText(t, successText);
@@ -55,7 +85,7 @@ async function macroExplore(t, pattern, values) {
   // open the page
   await driver.get(url);
   // wait for the body element
-  await driver.wait(selenium.until.elementLocated({css: 'h1,h2,.title,[role="navigation"]'}));
+  await driver.wait(selenium.until.elementLocated({css: 'h1,h2,.title,[role="navigation"]'}), DEFAULT_TIMEOUT);
   const x = await driver.findElements({css: 'h1,h2,.title,label,button,.btn'});
   console.log('Elements found:', x.length);
   for (var y of x) {
@@ -65,35 +95,5 @@ async function macroExplore(t, pattern, values) {
   t.fail('Done outputting available text to select on for the actual text');
 };
 
-async function macroLogin(t, pattern, successText, values) {
-  const {username, password} = values;
 
-  const url = makeUrl(pattern, values);
-  // const {driver} = t.context;
-  // open the page
-  await driver.get(url);
-  // wait for the login prompt on accounts
-  await driver.wait(selenium.until.elementLocated({css: '#auth_key'}));
-
-  // Login
-  const usernameInput = await driver.findElement({css: '#auth_key'});
-  const passwordInput = await driver.findElement({css: '[type="password"]'});
-  const submitButton = await driver.findElement({css: '[type="submit"]'});
-  await usernameInput.sendKeys(username);
-  await passwordInput.sendKeys(password);
-  await submitButton.click();
-
-  // await macro(t, pattern, successText, values);
-  await findSuccessText(t, successText);
-}
-macroLogin.title = (providedTitle, pattern) => pattern;
-
-async function macroLoginExplore(t, pattern, successText, values) {
-  await macroLogin(t, pattern, successText, values);
-  await macroExplore(t, pattern, values);
-}
-macroLoginExplore.title = (providedTitle, pattern) => pattern;
-
-
-
-export {driver, makeUrl, macro, macroExplore, macroLogin, macroLoginExplore}
+export {driver, makeUrl, macro, macroExplore}

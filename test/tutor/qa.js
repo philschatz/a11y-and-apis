@@ -1,6 +1,6 @@
 import selenium from 'selenium-webdriver';
 import test from 'ava';
-import {macro, driver, makeUrl} from '../_helpers';
+import {macro} from '../_helpers';
 import {tutorLogin} from './_helpers';
 
 const CONFIG = {

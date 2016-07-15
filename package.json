@@ -11,7 +11,7 @@
     "selenium-webdriver": "^2.53.3"
   },
   "scripts": {
-    "test": "ava"
+    "test": "SELENIUM_PHANTOMJS_LOG=.phantomjs.log ava"
   },
   "babel": {
     "presets": [
@@ -23,7 +23,7 @@
     ]
   },
   "ava": {
-    "concurrency": 2,
+    "concurrency": 3,
     "require": [
       "babel-register"
     ],
