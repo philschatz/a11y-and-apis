@@ -2,18 +2,60 @@ import fs from 'fs';
 import path from 'path';
 import test from 'ava';
 import selenium from 'selenium-webdriver';
-import chrome from 'selenium-webdriver/chrome';
+// import {listenToAjax} from './_xhr-helper'; // read it from fs because babel inje
 
-const DEFAULT_TIMEOUT = 10 * 1000; // wait 10sec before failing a test (change this if doing performance tests)
+const DEFAULT_TIMEOUT = 30 * 1000; // wait 10sec before failing a test (change this if doing performance tests)
 const WINDOW_WIDTH = 1024;
 const WINDOW_HEIGHT = 768;
-const SCREENSHOT_PATH = path.join(__dirname, '../screenshots/');
+const SCREENSHOT_PATH = path.join(__dirname, '../output/');
 
 const builder = new selenium.Builder()
-  // .withCapabilities(selenium.Capabilities.chrome())
+  // .withCapabilities(selenium.Capabilities.chrome());
   .withCapabilities(selenium.Capabilities.phantomjs());
 
 const driver = builder.build();
+
+const listenToAjax = fs.readFileSync(path.join(__dirname, '_xhr-helper.js'), 'utf8');
+
+test.afterEach(async t => {
+  // only run when test was successful because phantomjs could have failed earlier
+  const theLog = await driver.executeAsyncScript(function() {
+    arguments[arguments.length - 1](window.__THE_LOG);
+  });
+
+  if (theLog.length > 0) {
+
+    // Write out the XHR:LOAD requests to a markdown file
+    var entries = theLog.filter((entry) => entry[0] === 'XHR:LOAD')
+      .map((entry) => {
+        return `## ${entry[1]} ${entry[2]}
+
+\`\`\`json
+${JSON.stringify(entry[4], null, 2)}
+\`\`\`
+`;
+      });
+
+    const filename = t.title
+      .replace(/^afterEach\ for\ /, '') // ava prepends the test name to this string
+      .replace(/http(s?)\:\/\//, '')    // remove the leading `https://`
+      .replace(/[\ \/\:\.]/g, '_');     // replace ` /:.` in URLs with underscore
+
+    const pattern = t.title.replace(/^afterEach\ for\ /, ''); // ava prepends the test name to this string
+    const md = `# ${pattern}
+
+![image](./${filename}.png)
+
+# AJAX Calls
+
+${entries.join('\n')}
+`;
+
+    fs.writeFileSync(`${SCREENSHOT_PATH}/${filename}.md`, md);
+
+  }
+
+});
 
 test.after.always(async t => {
   await driver.quit();
@@ -74,6 +116,11 @@ async function macro(t, pattern, successText, values) {
   await driver.manage().window().setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
   // open the page
   await driver.get(url);
+
+  // It would be nice to have recordo already in place but it's not a global yet
+  // TODO: expose a global var for recordo when recordo is turned on
+  await driver.executeAsyncScript(listenToAjax);
+
   await findSuccessText(t, successText);
 }
 // macro.title = (providedTitle, pattern, successText, values) => makeUrl(pattern, values);
