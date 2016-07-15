@@ -23,7 +23,7 @@
     ]
   },
   "ava": {
-    "concurrency": 1,
+    "concurrency": 2,
     "require": [
       "babel-register"
     ],
