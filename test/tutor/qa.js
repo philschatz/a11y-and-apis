@@ -12,8 +12,8 @@ const CONFIG = {
 }
 
 // Logs in as the correct user
-tutorLogin('https://tutor-:env.openstax.org/dashboard', CONFIG);
+tutorLogin('https://tutor-{env}.openstax.org/dashboard', CONFIG);
 
-test.serial(macro, 'https://tutor-:env.openstax.org/qa', 'Available Books', CONFIG);
-test.serial(macro, 'https://tutor-:env.openstax.org/qa/:ecosystemId', 'Available Books', CONFIG);
-test.serial(macro, 'https://tutor-:env.openstax.org/qa/:ecosystemId/section/:bookSection', 'Available Books', CONFIG);
+test.serial(macro, 'https://tutor-{env}.openstax.org/qa', 'Available Books', CONFIG);
+test.serial(macro, 'https://tutor-{env}.openstax.org/qa/{ecosystemId}', 'Available Books', CONFIG);
+test.serial(macro, 'https://tutor-{env}.openstax.org/qa/{ecosystemId}/section/{bookSection}', 'Available Books', CONFIG);

@@ -11,9 +11,9 @@ test.serial(macro, 'https://cnx.org/donate',   'Your donation makes a difference
 test.serial(macro, 'https://cnx.org/license',  'Frequently asked IP (Intellectual Property) and legal questions');
 test.serial(macro, 'https://cnx.org/search',   'Advanced Search');
 
-test.serial(macro, 'http://cnx.org/search?q=:searchText', 'results found', {searchText: 'SELENIUM_NO_RESULTS'});
-test.serial(macro, 'https://cnx.org/search?q=:searchText', 'results found', {searchText: 'SELENIUM_NO_RESULTS'});
-test.serial(macro, 'https://cnx.org/contents/:uuid', 'Introduction to Science and the Realm of Physics, Physical Quantities, and Units',
+test.serial(macro, 'http://cnx.org/search?q={searchText}', 'results found', {searchText: 'SELENIUM_NO_RESULTS'});
+test.serial(macro, 'https://cnx.org/search?q={searchText}', 'results found', {searchText: 'SELENIUM_NO_RESULTS'});
+test.serial(macro, 'https://cnx.org/contents/{uuid}', 'Introduction to Science and the Realm of Physics, Physical Quantities, and Units',
   {uuid: '031da8d3-b525-429c-80cf-6c8ed997733a'}
 );
 test.skip.serial(macro, 'http://cnx.org/users/role-acceptance');

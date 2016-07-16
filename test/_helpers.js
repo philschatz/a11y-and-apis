@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import test from 'ava';
 import selenium from 'selenium-webdriver';
+import urltemplate from 'url-template';
+
 // import {listenToAjax} from './_xhr-helper'; // read it from fs because babel inje
 
 const DEFAULT_TIMEOUT = 30 * 1000; // wait 10sec before failing a test (change this if doing performance tests)
@@ -16,6 +18,14 @@ const builder = new selenium.Builder()
 const driver = builder.build();
 
 const listenToAjax = fs.readFileSync(path.join(__dirname, '_xhr-helper.js'), 'utf8');
+
+function titleToFilename(title) {
+  return title
+    .replace(/^afterEach\ for\ /, '') // ava prepends the test name to this string
+    .replace(/http(s?)\:\/\//, '')    // remove the leading `https://`
+    .replace(/[\ \/\:]/g, '_');     // replace ` /:` in URLs with underscore
+
+}
 
 test.afterEach(async t => {
   // only run when test was successful because phantomjs could have failed earlier
@@ -36,11 +46,7 @@ ${JSON.stringify(entry[4], null, 2)}
 `;
       });
 
-    const filename = t.title
-      .replace(/^afterEach\ for\ /, '') // ava prepends the test name to this string
-      .replace(/http(s?)\:\/\//, '')    // remove the leading `https://`
-      .replace(/[\ \/\:\.]/g, '_');     // replace ` /:.` in URLs with underscore
-
+    const filename = titleToFilename(t.title);
     const pattern = t.title.replace(/^afterEach\ for\ /, ''); // ava prepends the test name to this string
     const md = `# ${pattern}
 
@@ -68,11 +74,7 @@ test.afterEach.always(async t => {
   const data = await driver.takeScreenshot();
   const base64Data = data.replace(/^data:image\/png;base64,/, "");
 
-  const filename = t.title
-    .replace(/^afterEach\ for\ /, '') // ava prepends the test name to this string
-    .replace(/http(s?)\:\/\//, '') // remove the leading `https://`
-    .replace(/[\ \/\:\.]/g, '_');  // replace ` /:.` in URLs with underscore
-
+  const filename = titleToFilename(t.title);
 
   // Make sure the screenshot returns a promise
   return new selenium.promise.Promise((resolve, reject) => {
@@ -89,11 +91,9 @@ test.afterEach.always(async t => {
 
 // Convert URLs patterns like 'https://cnx.org/contents/:uuid' into a real URL using `values`
 function makeUrl(pattern, values={}) {
-  let url = pattern;
-  for (var key of Object.keys(values)) {
-    url = url.replace(`:${key}`, values[key]);
-  }
-  return url;
+  return urltemplate
+    .parse(pattern)
+    .expand(values);
 }
 
 async function findSuccessText(t, successText) {
