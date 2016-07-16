@@ -40,18 +40,6 @@
       },
       "tasking_plans": [
         {
-          "target_id": "1",
-          "target_type": "period",
-          "opens_at": "2016-07-06T05:01:00.000Z",
-          "due_at": "2016-07-15T12:00:00.000Z"
-        },
-        {
-          "target_id": "2",
-          "target_type": "period",
-          "opens_at": "2016-07-06T05:01:00.000Z",
-          "due_at": "2016-07-15T12:00:00.000Z"
-        },
-        {
           "target_id": "3",
           "target_type": "period",
           "opens_at": "2016-07-06T05:01:00.000Z",
@@ -62,7 +50,8 @@
           "target_type": "period",
           "opens_at": "2016-07-06T05:01:00.000Z",
           "due_at": "2016-07-15T12:00:00.000Z"
-        }
+        },
+        "... skipped 2"
       ]
     },
     {
@@ -77,10 +66,9 @@
       "is_published": false,
       "settings": {
         "page_ids": [
-          "369",
-          "370",
           "371",
-          "372"
+          "372",
+          "... skipped 2"
         ]
       },
       "tasking_plans": [
@@ -120,54 +108,6 @@
   "type": "homework",
   "title": "3 part MPQ",
   "stats": [
-    {
-      "period_id": "3",
-      "name": "3rd",
-      "mean_grade_percent": 33,
-      "total_count": 11,
-      "complete_count": 0,
-      "partially_complete_count": 1,
-      "current_pages": [
-        {
-          "id": "314",
-          "title": "Themes and Concepts of Biology",
-          "student_count": 1,
-          "correct_count": 1,
-          "incorrect_count": 2,
-          "chapter_section": [
-            1,
-            2
-          ],
-          "is_trouble": false
-        }
-      ],
-      "spaced_pages": [],
-      "is_trouble": false
-    },
-    {
-      "period_id": "1",
-      "name": "1st",
-      "mean_grade_percent": 17,
-      "total_count": 9,
-      "complete_count": 0,
-      "partially_complete_count": 2,
-      "current_pages": [
-        {
-          "id": "314",
-          "title": "Themes and Concepts of Biology",
-          "student_count": 2,
-          "correct_count": 1,
-          "incorrect_count": 5,
-          "chapter_section": [
-            1,
-            2
-          ],
-          "is_trouble": false
-        }
-      ],
-      "spaced_pages": [],
-      "is_trouble": false
-    },
     {
       "period_id": "2",
       "name": "2nd",
@@ -215,7 +155,8 @@
       ],
       "spaced_pages": [],
       "is_trouble": false
-    }
+    },
+    "... skipped 2"
   ],
   "shareable_url": "/@/kEyX0d/3-part-mpq"
 }

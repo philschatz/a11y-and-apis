@@ -40,18 +40,6 @@
       },
       "tasking_plans": [
         {
-          "target_id": "1",
-          "target_type": "period",
-          "opens_at": "2016-07-06T05:01:00.000Z",
-          "due_at": "2016-07-15T12:00:00.000Z"
-        },
-        {
-          "target_id": "2",
-          "target_type": "period",
-          "opens_at": "2016-07-06T05:01:00.000Z",
-          "due_at": "2016-07-15T12:00:00.000Z"
-        },
-        {
           "target_id": "3",
           "target_type": "period",
           "opens_at": "2016-07-06T05:01:00.000Z",
@@ -62,7 +50,8 @@
           "target_type": "period",
           "opens_at": "2016-07-06T05:01:00.000Z",
           "due_at": "2016-07-15T12:00:00.000Z"
-        }
+        },
+        "... skipped 2"
       ]
     },
     {
@@ -77,10 +66,9 @@
       "is_published": false,
       "settings": {
         "page_ids": [
-          "369",
-          "370",
           "371",
-          "372"
+          "372",
+          "... skipped 2"
         ]
       },
       "tasking_plans": [

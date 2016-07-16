@@ -28,24 +28,6 @@
   ],
   "periods": [
     {
-      "id": "1",
-      "name": "1st",
-      "enrollment_code": "927230",
-      "enrollment_url": "https://tutor-dev.openstax.org/enroll/927230",
-      "default_open_time": "00:01",
-      "default_due_time": "07:00",
-      "is_archived": false
-    },
-    {
-      "id": "2",
-      "name": "2nd",
-      "enrollment_code": "619496",
-      "enrollment_url": "https://tutor-dev.openstax.org/enroll/619496",
-      "default_open_time": "00:01",
-      "default_due_time": "07:00",
-      "is_archived": false
-    },
-    {
       "id": "3",
       "name": "3rd",
       "enrollment_code": "059521",
@@ -62,7 +44,8 @@
       "default_open_time": "00:01",
       "default_due_time": "07:00",
       "is_archived": false
-    }
+    },
+    "... skipped 2"
   ],
   "students": []
 }

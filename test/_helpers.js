@@ -27,6 +27,41 @@ function titleToFilename(title) {
 
 }
 
+// Modifies the JSON in-place
+function simplifyJson(json) {
+  const ARRAY_MAX_LEN = 2;
+  const STRING_MAX_LEN = 150;
+
+  if (!json) {
+    // skip if null (or falsy)
+  } else if (typeof json === 'string') {
+    if (json.length > STRING_MAX_LEN) {
+      json = `${json.substring(0, STRING_MAX_LEN)} ... ${json.length - STRING_MAX_LEN} more`
+    }
+  } else if (Array.isArray(json)) {
+    if (json.length > ARRAY_MAX_LEN) {
+      const len = json.length;
+      json.splice(0, len - ARRAY_MAX_LEN);
+      json.push(`... skipped ${len - ARRAY_MAX_LEN}`);
+    }
+    json.forEach(simplifyJson);
+  } else if (typeof json === 'object' && Object.keys(json).length > 0) {
+    // Trim strings so they are readable
+    for (const key of Object.keys(json)) {
+      const value = json[key];
+      // recurse
+      json[key] = simplifyJson(value);
+      // if (typeof value === 'string' && value.length > STRING_MAX_LEN) {
+      //   json[key] = `${value.substring(0, STRING_MAX_LEN)} ... ${value.length - STRING_MAX_LEN} more`;
+      // } else if (Array.isArray(value)) {
+      //   // recurse
+      //   simplifyJson(value);
+      // }
+    }
+  }
+  return json;
+}
+
 test.afterEach(async t => {
   // only run when test was successful because phantomjs could have failed earlier
   const theLog = await driver.executeAsyncScript(function() {
@@ -38,10 +73,11 @@ test.afterEach(async t => {
     // Write out the XHR:LOAD requests to a markdown file
     var entries = theLog.filter((entry) => entry[0] === 'XHR:LOAD')
       .map((entry) => {
+        const simplifiedJson = simplifyJson(entry[4]);
         return `## ${entry[1]} ${entry[2]}
 
 \`\`\`json
-${JSON.stringify(entry[4], null, 2)}
+${JSON.stringify(simplifiedJson, null, 2)}
 \`\`\`
 `;
       });
