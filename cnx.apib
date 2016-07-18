@@ -1,0 +1,337 @@
+FORMAT: 1A
+HOST: https://archive.cnx.org/
+
+# cnx.org apis
+
+Used for fetching book and page data, image resources, metadata like PDF and ePub links
+
+_TODO:_
+
++ change camelCase to underscore: `buyLink`, `googleAnalytics`, `mediaType`, `parentAuthors`, `parentId`, `parentTitle`, `parentVersion`, `shortId`. because this JSON contains camelCase, under_score, and alllowercase conventions.
++ Revise the Content Blurb format (for pages and books) because different places (parents of the derived copy, featured book) use a different subset of fields in this "Blurb".
++ Maybe construct the parent URL so the client does not have to (& provide an HTML url and a JSON URL?)
+
+
+# Data Structures
+
+## Date (string)
+This is a subtype of string used to mark ISO dates
+
+## UUID (string)
+This is a subtype of string used to mark UUIDs in the API
+
+## URL (string)
+This is a subtype of string used to mark URLs in the API
+
+## Href (string)
+This is a subtype of string used to mark relative URLs in the API
+
+## HTML (string)
+This is a subtype of string used to mark HTML in the API
+
+## User (object)
++ id: `jsmigth123` (string, required)
++ fullname: `Dr Johnny Smith Jr` (string, required)
++ title: `Dr` (string)
++ firstname: `John` (string)
++ surname: `Smith` (string)
++ suffix: `Jr` (string)
+
+## Page Version (object)
++ changes: `initial content publication` (string, required)
++ publisher (User, required)
++ revised: `2016-01-01T00:00:00.000Z` (Date, required)
++ version: `2` (string, required)
+
+## License (object)
++ code: `by` (string, required)
++ name: `Creative Commons Attribution License` (string, required)
++ url: `http://creativecommons.org/licenses/by/3.0/` (URL, required)
++ version: `3.0` (string, required)
+
+## Abstract Content Blurb (object)
++ id: `1d1fd537-77fb-4eac-8a8a-60bbaa747b6d` (UUID, required)
++ shortId: `HR_VN3f7` (string, required) - _TODO:_ rename this to `short_id`
++ version: `3` (string, required)
++ title: `Introduction to Science and the Realm of Physics, Physical Quantities, and Units` (string, required)
++ authors (array[User], required)
+
+## Page Resource (object)
++ filename: `Figure_01_00_01.jpg` (string, required)
++ id: `d47864c2ac77d80b1f2ff4c4c7f1b2059669e3e9` (string, required) the SHA of the file (which is also used for the path to download the resource)
++ media_type: `image/jpeg` (string, required)
+
+## Abstract Content (Abstract Content Blurb)
++ licensors (array[User], required)
++ publishers (array[User], required)
++ mediaType: application/vnd.org.cnx.module, application/vnd.org.cnx.collection (enum, required) - _TODO:_ rename to `media_type`
++ abstract: `<div>...</div>` (HTML, required) - the abstract HTML snippet which begins with an HTML element (ie `<div>` or `<ul>`) _TODO:_ rename to `abstract_html` to clarify the string will contain markup
++ buyLink (Href) - _TODO:_ rename to `buy_url` or `buy_href` if it is relative
++ created: `2016-01-01T00:00:00.000Z` (Date, required) - _TODO:_ rename to `created_at` to clarify it is a Date and not a boolean or some other string
++ revised: `2016-01-01T00:00:00.000Z` (Date, required) - _TODO:_ rename to `revised_at` or `changed_at` to match the name of the `change_message`, `changes`, and `changed_by` fields
++ doctype (string) - _TODO:_ is this used by anything?
++ googleAnalytics: `UA-30227798-1` (string) - _TODO:_ rename to `google_analytics_code` to clarify it is not a boolean
++ history (array[Page Version]) - _TODO:_ rename to `changes` to indicate an array (s) and to match the `change_message` field
++ keywords: Scientific method, Second (array[string])
++ language: `en-us` (string, required)
++ legacy_id: `m42119` (string)
++ legacy_version: `1.3` (string)
++ license (License, required)
++ parent (array[Abstract Content Blurb]) - Contains which Page/Book this is derived from _TODO:_ This should be explicitly `null` if it is not derived from anything
++ parentAuthors (array[User]) - _TODO:_ Should this be removed in favor of `parent.authors`?
++ parentId (UUID) - _TODO:_ Should this be removed in favor of `parent.id`?
++ parentTitle (string) - _TODO:_ Should this be removed in favor of `parent.title`?
++ parentVersion (string) - _TODO:_ Should this be removed in favor of `parent.version`?
++ printStyle: `ccap-physics` (string) - _TODO:_ If this is not used can it be removed?
++ resources (array[Page Resource]) - Contains all resources (ie images) necessary to render this Page or resources attached to this Book (like the cover image or CSS file)
++ roles (array) - _TODO:_ What is this and what is it used for?
++ stateid: 1 (number, required) - _TODO:_ What is this and what is it used for?
++ subjects: `Mathematics and Statistics` (array) - _TODO:_ can this ever have more than 1 entry?
++ submitlog: `updated images` (string, required) - _TODO:_ rename to `change_message` to clarify what the string contains or just use the `changes` array instead of duplicating
++ submitter (User, required) - _TODO:_ rename to `changed_by` to clarify this value is a User or just use the `changes` array instead of duplicating
+
+## Subcollection (object)
++ id (UUID, required)
++ shortId (string, required) - _TODO:_ rename to `short_id`
++ title (string, required)
++ contents (array[Subcollection]) - _TODO:_ rename to `children` to distinguish from `content` which is the HTML content in a Page
+
+## Book (Abstract Content)
++ collated (boolean, required) - _TODO:_ rename to `is_collated`
++ tree (Subcollection, required) - _TODO:_ Why is the root node duplicated here? Suggestion: just have `children`
+
+
+## Page (Abstract Content)
++ content: `<html>...</html>` (HTML, required) - the HTML of the page which includes the `<html>`, `<head>`, `<body>` tags  _TODO:_ rename to `content_html` to clarify the string will contain markup
+
+
+# Metadata Structures
+
+## Page Download Format (object)
++ created: `2016-01-01T00:00:00.000Z` (Date, required) - _TODO:_ rename to `created_at`
++ details: `Electronic book format file, for viewing on mobile devices.` (string, required) - A human-readable message describing the format _TODO:_ can this be removed because of i18n?
++ filename: `introduction-to-science-and-the-realm-of-physics-physical-quantities-and-units-3.epub` (string, required) - A suggested name for the file including file extension
++ format: EPUB, Offline ZIP (enum, required) - _TODO:_ "ZIP" is not an acronym and "EPUB" is not the correct casing. Suggestion: rename this to `mime_type` and for different zips, use the `+zip` mime_type syntax
++ path: `/exports/1d1fd537-77fb-4eac-8a8a-60bbaa747b6d%403.epub/introduction-to-science-and-the-realm-of-physics-physical-quantities-and-units-3.epub` (Href, required) - _TODO:_ rename to `file_href` to clarify it is a relative URL
++ size: 0 (number, required) - The file size in bytes
++ state: missing (enum, required) - Whether the file is available or not _TODO:_ Should be standardized with other async jobs formats
+
+## Page Metadata (object)
++ canPublish: OpenStaxCollege, cnxcap (array[string]) - _TODO:_ rename to something like `publishers` or `publishable_by` to clarify that the value is not a boolean and maybe include more than just the id of the User
++ downloads (array[Page Download Format])
++ isLatest: false (boolean) - Specifies if there is a newer version of this Page/Book _TODO:_ rename to `is_latest`
+
+## Featured Book (object)
++ id: `d6db603c-cd31-4ca4-be19-d29734673b90` (UUID, required) - _TODO:_ rename to `uuid`? Also, include a `href` field that has the constructed path to go to (`/contents/{id}@{version}`)
++ title: `Business Fundamentals` (string, required)
++ abstract: `<div>...</div>` (HTML, required) - _TODO:_ rename to `abstract_html`
++ version: `4.3` (string, required)
++ resourcePath: `/resources/4c2732eca36eb7b56ae1b67dcb510e94744b6c99` (Href, required) - _TODO:_ rename to `thumbnail_cover_href` to clarify that the path is to an image and maybe include a `thumbnail_cover_mime_type`.
++ type: CNX Featured (enum, required) - _TODO:_ What other values can this have? Is this field used by anyone?
++ legacy_id: `col11227` (string)
++ legacy_version: `1.4` (string)
+
+## Language and Count (array[string, number])
+
+## Subject (object)
++ id: 5 (number, required)
++ name: `Science and Technology` (string, required)
++ count (object)
+    + collection: 819 (number, required)
+    + module: 14577 (number, required)
+
+## Site Extras (object)
++ featuredLinks (array[Featured Book], required) - _TODO:_ rename to `featured_books` to clarify that they are not just links. Also, maybe this should be a "Abstract Content Blurb". Could/should it be a separate request since it is only used by the homepage?
++ languages_and_count (array[Language and Count], required) - _TODO:_ Are there other places where we do/should use a size-N array? If not, maybe this does not need to be an exception?
++ licenses (array[License]) - All possible licenses available
++ messages (array[string]) - Might be a downtime message? _TODO:_ Is this an array of strings? Also, should probably share the format for tutor maintenance messages
++ subjects (array[Subject]) - _TODO:_ Are these needed on every page load?
+
+
+# Page Retrieval [/contents/{pageUuidAndVer}]
+
+## Get the Page as JSON [GET /contents/{pageUuidAndVer}.json]
+
++ Parameters
+    + pageUuidAndVer: `HR_VN3f7@3` (string, required)
+
++ Response 200 (application/json)
+    + Attributes (Page)
+
+
+## Get the Page as HTML [GET /contents/{pageUuidAndVer}.html]
+
++ Parameters
+    + pageUuidAndVer: `HR_VN3f7@3` (string, required)
+
++ Response 200 (text/html)
+
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <head>
+                <title>Introduction to Kinematics</title>
+            </head>
+            <body>
+                <p>This is the beginning...</p>
+                <ul>
+                    <li>The start</li>
+                </ul>
+            </body>
+        </html>
+
+
+## Get a Page based on Accept Header or File Extension [GET /contents/{pageUuidAndVer}{optExtension}]
+
+Uses the `Accept` header (or `optExtension`) to determine whehter to respond with `text/html` or `application/json`.
+
++ Parameters
+    + pageUuidAndVer: `HR_VN3f7@3` (string, required)
+    + optExtension (enum[string]) Optional extension to force the response type
+        + Members
+            + `.json`
+            + `.html`
+
++ Request (text/html)
++ Response 200 (text/html)
+
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <head>
+                <title>Introduction to Kinematics</title>
+            </head>
+            <body>
+                <p>This is the beginning...</p>
+                <ul>
+                    <li>The start</li>
+                </ul>
+            </body>
+        </html>
+
++ Request (application/json)
++ Response 200
+    + Attributes (Page)
+
+
+## Get a Page in a Book [GET /contents/{bookUuidAndVer}:{pageUuidAndVer}{optExtension}]
+
++ Similar to "Get a Page based on Accept Header or File Extension"
++ Does the numbering and collation based on the rules in the book
+
++ Parameters
+    + bookUuidAndVer: `Ax2o07Ul@9.33` (string, required)
+    + pageUuidAndVer: `HR_VN3f7@3` (string, required)
+    + optExtension (enum[string]) Optional extension to force the response type
+        + Members
+            + `.json`
+            + `.html`
+
+
++ Request (text/html)
++ Response 200 (text/html)
+
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <head>
+                <title>Introduction to Kinematics</title>
+            </head>
+            <body>
+                <p>This is the beginning...</p>
+                <ul>
+                    <li>The start</li>
+                </ul>
+            </body>
+        </html>
+
++ Request (application/json)
++ Response 200
+    + Attributes (Page)
+
+
+# Book Retrieval [/contents/{bookUuidAndVersion}]
+
+## Get the Book as JSON [GET /contents/{bookUuidAndVer}.json]
+
++ Parameters
+    + bookUuidAndVer: `Ax2o07Ul@9.33` (string, required)
+
++ Response 200 (application/json)
+    + Attributes (Book)
+
+
+## Get the Book as HTML [GET /contents/{bookUuidAndVer}.html]
+
+_TODO:_ Why does the body contain a 1-node list (the root node?). Maybe that should be a `<h1>` instead?
+
+_TODO:_ change empty `<a>` tags to be a `<span data-type='title'>` so they can still be selected or convert the lists into `<h#>` tags?
+
++ Parameters
+    + bookUuidAndVer: `Ax2o07Ul@9.33` (string, required)
+
++ Response 200 (text/html)
+
+        <html xmlns="http://www.w3.org/1999/xhtml">
+          <body>
+            <ul>
+              <li>
+                <a href="/contents/031da8d3-b525-429c-80cf-6c8ed997733a%409.33.html">College Physics</a>
+                <ul>
+                  <li>
+                    <a>Kinematics and Motion</a>
+                    <ul>...</ul>
+                  </li>
+              </li>
+            </ul>
+          </body>
+        </html>
+
+
+## Get a Book based on Accept Header or File Extension [GET /contents/{bookUuidAndVer}{optExtension}]
+
+Uses the `Accept` header (or `optExtension`) to determine whehter to respond with `text/html` or `application/json`.
+
++ Parameters
+    + bookUuidAndVer: `Ax2o07Ul@9.33` (string, required)
+    + optExtension (enum[string]) Optional extension to force the response type
+        + Members
+            + `.json`
+            + `.html`
+
++ Request (text/html)
++ Response 200 (text/html)
+
+        <html xmlns="http://www.w3.org/1999/xhtml">
+          <body>
+            <ul>
+              <li>
+                <a href="/contents/031da8d3-b525-429c-80cf-6c8ed997733a%409.33.html">College Physics</a>
+                <ul>
+                  <li>
+                    <a>Kinematics and Motion</a>
+                    <ul>...</ul>
+                  </li>
+              </li>
+            </ul>
+          </body>
+        </html>
+
++ Request (application/json)
++ Response 200
+    + Attributes (Book)
+
+
+# Additional Data [/extras]
+
+## Get additional Page/Book metadata [GET /extras/{uuidAndVer}]
+
++ Parameters
+    + uuidAndVer: `HR_VN3f7@3` (string, required) The short/long Page/Book identifier with optional version number `@3`
+
++ Response 200 (application/json)
+
+    + Attributes (Page Metadata)
+
+
+## Get site-wide settings like Featured Books [GET /extras]
+
+_TODO:_ answer "Are all of these fields necessary for every page load?"
+
++ Response 200 (application/json)
+
+    + Attributes (Site Extras)
