@@ -20,6 +20,9 @@ This is a subtype of string used to mark ISO dates
 ## UUID (string)
 This is a subtype of string used to mark UUIDs in the API
 
+## UUID and Version (string)
+This is a subtype of string used to mark UUIDs with a version in the API. _TODO:_ this is **only** used in search results so maybe it should be split into separate `id` and `version` fields
+
 ## URL (string)
 This is a subtype of string used to mark URLs in the API
 
@@ -148,9 +151,58 @@ This is a subtype of string used to mark HTML in the API
 + subjects (array[Subject]) - _TODO:_ Are these needed on every page load?
 
 
+# Search Structures
+
+## Search Limit (object)
++ tag: `text` (string, required)
++ value: `college physics` (string, required)
+
+## Search Result Auxiliary Type (object)
++ id: `application/vnd.org.cnx.collection` (string, required) - _TODO:_ rename to `mime_type` or replace this whole structure with just a `mime_types` array
++ name: `Book` (string, required)
+
+## Search Result Auxiliary (object)
++ authors (array[User])
++ types (array[Search Result Auxiliary Type]) - _TODO:_ Can this just be strings containing the `mime_type`?
+
+## Search Result Limit Count (object)
++ value: `zone refining` (string, required)
++ count: 3 (number, required)
+
+## Search Result Limit (object)
++ tag: `keyword`
++ values (array[Search Result Limit Count])
+
+## Search Result Item (object)
++ id (UUID and Version, required) - _TODO:_ provide the fields separately (like other places) and/or provide a `href` field which would begin with `/contents` (that way in the future, people can search for other types like exercises)
++ title (string, required)
++ authors (array[User], required)
++ bodySnippet (HTML) - _TODO:_ rename to `body_snippet_html`
++ keywords (array[string], required) - _TODO:_ Maybe this result item should be structured the same as a "Content Blurb"
++ mediaType (string, required) - _TODO:_ rename to `mime_type`
++ pubDate (Date, required) - _TODO:_ rename to `changed_at`
++ summarySnippet (HTML) - _TODO:_ rename to `summary_snippet_html`
+
+## Search Result Data (object)
++ auxiliary (Search Result Auxiliary, required) - _TODO:_ move the fields into this data structure directly instead of having a separate `auxiliary` field?
++ items (array[Search Result Item], required)
++ limits (array[Search Result Limit], required)
++ total: 37 (number, required) - _TODO:_ rename to `total_count` to match tutor
+
+## Search Query (object)
++ limits (array[Search Limit], required)
++ page: 1 (number, required) - This is 1-based
++ per_page: 20 (number, required)
++ sort (array, required)
+
+## Search Results (object)
++ query (Search Query, required)
++ results (Search Result Data, required)
+
+
 # Page Retrieval [/contents/{pageUuidAndVer}]
 
-## Get the Page as JSON [GET /contents/{pageUuidAndVer}.json]
+## Get a single Page as JSON [GET /contents/{pageUuidAndVer}.json]
 
 + Parameters
     + pageUuidAndVer: `HR_VN3f7@3` (string, required)
@@ -159,7 +211,7 @@ This is a subtype of string used to mark HTML in the API
     + Attributes (Page)
 
 
-## Get the Page as HTML [GET /contents/{pageUuidAndVer}.html]
+## Get a single Page as HTML [GET /contents/{pageUuidAndVer}.html]
 
 + Parameters
     + pageUuidAndVer: `HR_VN3f7@3` (string, required)
@@ -179,7 +231,7 @@ This is a subtype of string used to mark HTML in the API
         </html>
 
 
-## Get a Page based on Accept Header or File Extension [GET /contents/{pageUuidAndVer}{optExtension}]
+## Get a single Page based on Accept Header or File Extension [GET /contents/{pageUuidAndVer}{optExtension}]
 
 Uses the `Accept` header (or `optExtension`) to determine whehter to respond with `text/html` or `application/json`.
 
@@ -210,7 +262,7 @@ Uses the `Accept` header (or `optExtension`) to determine whehter to respond wit
     + Attributes (Page)
 
 
-## Get a Page in a Book [GET /contents/{bookUuidAndVer}:{pageUuidAndVer}{optExtension}]
+## Get a single Page in a Book [GET /contents/{bookUuidAndVer}:{pageUuidAndVer}{optExtension}]
 
 + Similar to "Get a Page based on Accept Header or File Extension"
 + Does the numbering and collation based on the rules in the book
@@ -246,7 +298,7 @@ Uses the `Accept` header (or `optExtension`) to determine whehter to respond wit
 
 # Book Retrieval [/contents/{bookUuidAndVersion}]
 
-## Get the Book as JSON [GET /contents/{bookUuidAndVer}.json]
+## Get a Book as JSON [GET /contents/{bookUuidAndVer}.json]
 
 + Parameters
     + bookUuidAndVer: `Ax2o07Ul@9.33` (string, required)
@@ -255,7 +307,7 @@ Uses the `Accept` header (or `optExtension`) to determine whehter to respond wit
     + Attributes (Book)
 
 
-## Get the Book as HTML [GET /contents/{bookUuidAndVer}.html]
+## Get a Book as HTML [GET /contents/{bookUuidAndVer}.html]
 
 _TODO:_ Why does the body contain a 1-node list (the root node?). Maybe that should be a `<h1>` instead?
 
@@ -315,6 +367,25 @@ Uses the `Accept` header (or `optExtension`) to determine whehter to respond wit
 + Response 200
     + Attributes (Book)
 
+
+# Search [/search?q={searchText}]
+
+## Search and Get Results [GET /search?q={searchText}]
+
++ Parameters
+    + searchText (string, required) - The text to search for. It may contain namespaced things like:
+      - author:"John Smith"
+      - title:"College Physics"
+      - subject:"Mathematics and Statistics"
+      - keyword:keyword1
+      - type:book
+      - language:0 _TODO:_ Why is this an index rather than the language code?
+      - pubYear:2012
+      - sort:popularity
+
++ Response 200 (application/json)
+
+    + Attributes (Search Results)
 
 # Additional Data [/extras]
 
