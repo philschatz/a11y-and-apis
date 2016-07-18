@@ -406,3 +406,20 @@ _TODO:_ answer "Are all of these fields necessary for every page load?"
 + Response 200 (application/json)
 
     + Attributes (Site Extras)
+
+## Get simulations that can be included in content [GET /specials]
+
+_TODO:_ Can/should this have a JSON representation? Also, why the `<style>` tag and the `class="simulation-links"`? That seems like an odd API...
+
++ Response 200 (text/html)
+
+        <!DOCTYPE html>
+        <html>
+            <body>
+                <h1>OpenStax Simulations</h1>
+                <div class="simulation-links">
+                    <a href="ee4d9924-b4ce-11e5-84cb-4b93623233d2/battery-resistor-circuit/"> <img><h2>Battery-Resistor Circuit</h2>  </a>
+                    ...
+                </div>
+            </body>
+        </html>

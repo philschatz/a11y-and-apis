@@ -16,5 +16,6 @@ test.serial(macro, 'https://cnx.org/search?q={searchText}', 'results found', {se
 test.serial(macro, 'https://cnx.org/contents/{uuid}', 'Introduction to Science and the Realm of Physics, Physical Quantities, and Units',
   {uuid: '031da8d3-b525-429c-80cf-6c8ed997733a'}
 );
+test.serial(macro, 'http://archive.cnx.org/specials/',           'OpenStax Simulations');
 test.skip.serial(macro, 'http://cnx.org/users/role-acceptance');
 test.skip.serial(macro, 'http://cnx.org/workspace');

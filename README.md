@@ -28,6 +28,7 @@ Selenium will:
 
 - `npm install` to install dependencies
 - `npm test`
+- `npm test -- test/cnx.js` to run just 1 test file. see [ava usage](https://github.com/avajs/ava#usage) for more arguments/options
 
 
 # The URLs
