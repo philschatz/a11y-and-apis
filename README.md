@@ -2,6 +2,7 @@
 
 - make sure the browser URLs work since people can link to them forever
 - give new developers an overview of the different pages (by autogenerating screenshots)
+  - see [./output/](./output/#readme) for screenshots and samples (because there are a **TON** of URL screenshots)
 - collect performance metrics
 - collect AJAX requests to help document our APIs for new developers
 
@@ -10,12 +11,17 @@
 
 - http://docs.openstaxcnx.apiary.io/ ([Source](./cnx.apib))
 
+# How it works
+
 Selenium will:
 
-- go to the page (maybe have to login)
-- log AJAX responses
-- wait for success text
-- log time it took (maybe the testing framework does this for free)
+1. go to the page (maybe have to login)
+2. log AJAX responses
+3. wait for success text
+4. take a screenshot and save it to [./output/](./output/)
+5. output any AJAX requests to a `.md` file
+4. log time it took (maybe the testing framework does this for free)
+
 
 
 # To Run
@@ -24,7 +30,11 @@ Selenium will:
 - `npm test`
 
 
-# cnx.org
+# The URLs
+
+## cnx.org
+
+Code: [./test/cnx.js](./test/cnx.js)
 
 Source https://github.com/Connexions/webview/blob/master/src/scripts/router.coffee
 
@@ -49,7 +59,9 @@ although i think the `/` is separate because you could do `uuid`, `uuid/` or `uu
 16 is probably a more reasonable estimate of actual permutations
 ```
 
-# openstax.org
+## openstax.org
+
+Code: [./test/openstax.js](./test/openstax.js)
 
 Source https://github.com/openstax/os-webview/blob/master/src/app/router.js
 
@@ -100,7 +112,9 @@ Source https://github.com/openstax/os-webview/blob/master/src/app/router.js
 - `https://openstax.org/support`
 
 
-# tutor.openstax.org
+## tutor.openstax.org
+
+Code: [./test/tutor/](./test/tutor/)
 
 Source: https://github.com/openstax/tutor-js/blob/master/src/router.cjsx
 
