@@ -5,6 +5,11 @@
 - collect performance metrics
 - collect AJAX requests to help document our APIs for new developers
 
+
+# Api Blueprint files
+
+- http://docs.openstaxcnx.apiary.io/ ([Source](./cnx.apib))
+
 Selenium will:
 
 - go to the page (maybe have to login)
