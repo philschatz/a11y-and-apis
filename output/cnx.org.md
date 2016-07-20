@@ -1,6 +1,6 @@
 # https://cnx.org
 
-![image](./cnx.org.png)
+![image](./screenshots/cnx.org.png)
 
 # AJAX Calls
 

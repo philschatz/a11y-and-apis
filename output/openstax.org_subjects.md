@@ -1,44 +1,8 @@
 # https://openstax.org/subjects
 
-![image](./openstax.org_subjects.png)
+![image](./screenshots/openstax.org_subjects.png)
 
 # AJAX Calls
-
-## GET https://openstax.org/app/pages/subjects/subjects.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _get = function get(object, proper ... 13310 more"
-```
-
-## GET https://openstax.org/app/helpers/backbone/loading-view.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target,  ... 7101 more"
-```
-
-## GET https://openstax.org/app/pages/subjects/subjects.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 1823 more"
-```
-
-## GET https://openstax.org/app/components/filter-button/filter-button.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 4767 more"
-```
-
-## GET https://openstax.org/app/components/strips/strips.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 534 more"
-```
-
-## GET https://openstax.org/app/pages/subjects/category-section/category-section.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 4318 more"
-```
 
 ## GET https://openstax.org/api/v1/pages?type=news.NewsArticle&fields=slug%2Ctitle%2Cdate%2Cauthor%2Cpin_to_top%2Csubheading%2Cbody%2Carticle_image
 
@@ -49,84 +13,6 @@
   },
   "pages": []
 }
-```
-
-## GET https://openstax.org/app/components/loading-section/loading-section.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 2490 more"
-```
-
-## GET https://openstax.org/app/pages/subjects/category-section/category-section.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 816 more"
-```
-
-## GET https://openstax.org/app/pages/subjects/category-section/book/book.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 4728 more"
-```
-
-## GET https://openstax.org/app/components/loading-section/loading-section.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 3688 more"
-```
-
-## GET https://openstax.org/app/pages/subjects/category-section/book/book.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _typeof = typeof Symbol === \"func ... 1634 more"
-```
-
-## GET https://openstax.org/app/components/get-this-title/get-this-title.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 6293 more"
-```
-
-## GET https://openstax.org/app/components/get-this-title/pdf-submenu/pdf-submenu.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 2839 more"
-```
-
-## GET https://openstax.org/app/components/get-this-title/print-submenu/print-submenu.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 2865 more"
-```
-
-## GET https://openstax.org/app/components/get-this-title/get-this-title.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _typeof = typeof Symbol === \"func ... 8040 more"
-```
-
-## GET https://openstax.org/app/components/remover/remover.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 3702 more"
-```
-
-## GET https://openstax.org/app/components/get-this-title/pdf-submenu/pdf-submenu.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 1774 more"
-```
-
-## GET https://openstax.org/app/components/get-this-title/print-submenu/print-submenu.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 1506 more"
-```
-
-## GET https://openstax.org/app/components/remover/remover.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 460 more"
 ```
 
 ## GET https://openstax.org/api/user/
@@ -198,7 +84,7 @@
 ```json
 {
   "meta": {
-    "total_count": 26
+    "total_count": 27
   },
   "pages": [
     {
@@ -209,20 +95,21 @@
       "bookstore_blurb": "",
       "bookstore_link": "",
       "concept_coach_link": "",
-      "cover_url": "https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/microbiology.svg",
-      "high_resolution_pdf_url": "https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/Micro_SampleChapters_20160513.pdf",
+      "cover_url": "https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/american_government.svg",
+      "high_resolution_pdf_url": "https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/American_Government-OP.pdf",
       "ibook_link": "",
       "ibook_link_volume_2": "",
-      "id": 83,
+      "id": 84,
       "is_ap": false,
+      "low_resolution_pdf_url": "https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/American_Government-LR.pdf",
       "meta": {
-        "detail_url": "https://openstax.org/api/v1/pages/83/",
+        "detail_url": "https://openstax.org/api/v1/pages/84/",
         "type": "books.Book"
       },
-      "slug": "microbiology",
-      "subject_name": "Science",
-      "title": "Microbiology",
-      "webview_link": ""
+      "slug": "american-government",
+      "subject_name": "Social Sciences",
+      "title": "American Government",
+      "webview_link": "http://cnx.org/content/col11995"
     },
     {
       "amazon_blurb": "",
@@ -232,22 +119,23 @@
       "bookstore_blurb": "",
       "bookstore_link": "",
       "concept_coach_link": "",
-      "cover_url": "https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/american_government.svg",
-      "high_resolution_pdf_url": "https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/American_Government_Sample_Chapters_20160420.pdf",
+      "cover_url": "https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/Chmistry-Atoms-First.svg",
+      "high_resolution_pdf_url": "https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/col12012-1.6-OP.pdf",
       "ibook_link": "",
       "ibook_link_volume_2": "",
-      "id": 84,
+      "id": 93,
       "is_ap": false,
+      "low_resolution_pdf_url": "https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/col12012-1.6-LR.pdf",
       "meta": {
-        "detail_url": "https://openstax.org/api/v1/pages/84/",
+        "detail_url": "https://openstax.org/api/v1/pages/93/",
         "type": "books.Book"
       },
-      "slug": "american-government",
-      "subject_name": "Social Sciences",
-      "title": "American Government",
+      "slug": "chemistry-atoms-first",
+      "subject_name": "Science",
+      "title": "Chemistry: Atoms First",
       "webview_link": ""
     },
-    "... skipped 24"
+    "... skipped 25"
   ]
 }
 ```

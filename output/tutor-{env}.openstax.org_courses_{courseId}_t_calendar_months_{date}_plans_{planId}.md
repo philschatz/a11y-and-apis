@@ -1,6 +1,6 @@
 # https://tutor-{env}.openstax.org/courses/{courseId}/t/calendar/months/{date}/plans/{planId}
 
-![image](./tutor-{env}.openstax.org_courses_{courseId}_t_calendar_months_{date}_plans_{planId}.png)
+![image](./screenshots/tutor-{env}.openstax.org_courses_{courseId}_t_calendar_months_{date}_plans_{planId}.png)
 
 # AJAX Calls
 

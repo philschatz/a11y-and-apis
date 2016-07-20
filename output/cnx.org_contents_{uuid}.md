@@ -1,6 +1,6 @@
 # https://cnx.org/contents/{uuid}
 
-![image](./cnx.org_contents_{uuid}.png)
+![image](./screenshots/cnx.org_contents_{uuid}.png)
 
 # AJAX Calls
 
@@ -70,7 +70,7 @@
     {
       "count": {
         "collection": 819,
-        "module": 14577
+        "module": 14586
       },
       "id": 5,
       "name": "Science and Technology"
@@ -148,7 +148,7 @@
     {
       "count": {
         "collection": 819,
-        "module": 14577
+        "module": 14586
       },
       "id": 5,
       "name": "Science and Technology"
@@ -485,6 +485,12 @@
 }
 ```
 
+## GET https://cnx.org/users/profile
+
+```json
+"<!DOCTYPE html><html lang=\"en-US\"><head><title>OpenStax CNX</title><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-sca ... 733 more"
+```
+
 ## GET https://archive.cnx.org/extras/1d1fd537-77fb-4eac-8a8a-60bbaa747b6d@3
 
 ```json
@@ -516,11 +522,5 @@
   ],
   "isLatest": true
 }
-```
-
-## GET https://cnx.org/users/profile
-
-```json
-"<!DOCTYPE html><html lang=\"en-US\"><head><title>OpenStax CNX</title><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-sca ... 733 more"
 ```
 

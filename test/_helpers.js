@@ -9,13 +9,13 @@ import urltemplate from 'url-template';
 const DEFAULT_TIMEOUT = 30 * 1000; // wait 10sec before failing a test (change this if doing performance tests)
 const WINDOW_WIDTH = 1024;
 const WINDOW_HEIGHT = 768;
-const SCREENSHOT_PATH = path.join(__dirname, '../output/');
+const OUTPUT_PATH = path.join(__dirname, '../output/');
+const SCREENSHOT_DIRNAME = 'screenshots'
+const SCREENSHOT_PATH = path.join(OUTPUT_PATH, SCREENSHOT_DIRNAME);
 
 const builder = new selenium.Builder()
-  // .withCapabilities(selenium.Capabilities.chrome());
-  .withCapabilities(selenium.Capabilities.phantomjs());
-
-const driver = builder.build();
+  .withCapabilities(selenium.Capabilities.chrome());
+  // .withCapabilities(selenium.Capabilities.phantomjs());
 
 const listenToAjax = fs.readFileSync(path.join(__dirname, '_xhr-helper.js'), 'utf8');
 
@@ -62,17 +62,25 @@ function simplifyJson(json) {
   return json;
 }
 
+test.beforeEach(async t => {
+  t.context.driver = builder.build();
+})
+
 test.afterEach(async t => {
   // only run when test was successful because phantomjs could have failed earlier
-  const theLog = await driver.executeAsyncScript(function() {
+  const theLog = await t.context.driver.executeAsyncScript(function() {
     arguments[arguments.length - 1](window.__THE_LOG);
   });
 
   if (theLog.length > 0) {
 
+    const filename = titleToFilename(t.title);
+    const pattern = t.title.replace(/^afterEach\ for\ /, ''); // ava prepends the test name to this string
+
     // Write out the XHR:LOAD requests to a markdown file
-    var entries = theLog.filter((entry) => entry[0] === 'XHR:LOAD')
+    var entries = theLog.filter((entry) => entry[0] === 'XHR:LOAD' && !/\.js$/.test(entry[2])) // exclude .js files (for openstax)
       .map((entry) => {
+        console.error('MaPpInG', pattern, entry[2]); // log the browser URL and the AJAX URL for building an API
         const simplifiedJson = simplifyJson(entry[4]);
         return `## ${entry[1]} ${entry[2]}
 
@@ -82,32 +90,26 @@ ${JSON.stringify(simplifiedJson, null, 2)}
 `;
       });
 
-    const filename = titleToFilename(t.title);
-    const pattern = t.title.replace(/^afterEach\ for\ /, ''); // ava prepends the test name to this string
     const md = `# ${pattern}
 
-![image](./${filename}.png)
+![image](./${SCREENSHOT_DIRNAME}/${filename}.png)
 
 # AJAX Calls
 
 ${entries.join('\n')}
 `;
 
-    fs.writeFileSync(`${SCREENSHOT_PATH}/${filename}.md`, md);
+    fs.writeFileSync(`${OUTPUT_PATH}/${filename}.md`, md);
 
   }
 
-});
-
-test.after.always(async t => {
-  await driver.quit();
 });
 
 test.afterEach.always(async t => {
   // Sleep for 50ms before taking a screenshot so CSS animations finish
   // await driver.sleep(50);
 
-  const data = await driver.takeScreenshot();
+  const data = await t.context.driver.takeScreenshot();
   const base64Data = data.replace(/^data:image\/png;base64,/, "");
 
   const filename = titleToFilename(t.title);
@@ -125,6 +127,10 @@ test.afterEach.always(async t => {
 
 })
 
+test.afterEach.always(async t => {
+  await t.context.driver.quit();
+});
+
 // Convert URLs patterns like 'https://cnx.org/contents/:uuid' into a real URL using `values`
 function makeUrl(pattern, values={}) {
   return urltemplate
@@ -133,7 +139,7 @@ function makeUrl(pattern, values={}) {
 }
 
 async function findSuccessText(t, successText) {
-  // const {driver} = t.context;
+  const {driver} = t.context;
   // wait for the body element
   await driver.wait(selenium.until.elementLocated({css: 'body'}), DEFAULT_TIMEOUT);
   // wait until the successText is present
@@ -148,7 +154,7 @@ async function findSuccessText(t, successText) {
 
 async function macro(t, pattern, successText, values) {
   const url = makeUrl(pattern, values);
-  // const {driver} = t.context;
+  const {driver} = t.context;
   await driver.manage().window().setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
   // open the page
   await driver.get(url);
@@ -165,7 +171,7 @@ macro.title = (providedTitle, pattern) => pattern;
 // Helper for generating tests. This lists all headers
 async function macroExplore(t, pattern, values) {
   const url = makeUrl(pattern, values);
-  // const {driver} = t.context;
+  const {driver} = t.context;
   // open the page
   await driver.get(url);
   // wait for the body element
@@ -180,4 +186,4 @@ async function macroExplore(t, pattern, values) {
 };
 
 
-export {driver, makeUrl, macro, macroExplore}
+export {makeUrl, macro, macroExplore}

@@ -1,6 +1,6 @@
 # https://tutor-{env}.openstax.org/courses/{courseId}/t/homeworks/{homeworkId}
 
-![image](./tutor-{env}.openstax.org_courses_{courseId}_t_homeworks_{homeworkId}.png)
+![image](./screenshots/tutor-{env}.openstax.org_courses_{courseId}_t_homeworks_{homeworkId}.png)
 
 # AJAX Calls
 

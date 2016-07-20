@@ -1,6 +1,6 @@
 # https://tutor-{env}.openstax.org/courses/{courseId}/list
 
-![image](./tutor-{env}.openstax.org_courses_{courseId}_list.png)
+![image](./screenshots/tutor-{env}.openstax.org_courses_{courseId}_list.png)
 
 # AJAX Calls
 
@@ -21,15 +21,15 @@
           ],
           "clue": {
             "confidence_interval": [
-              0.399343345192471,
-              0.990959804212301
+              0,
+              0.15563502710434
             ],
-            "confidence_interval_interpretation": "bad",
-            "sample_size": 0,
-            "sample_size_interpretation": "below",
-            "unique_learner_count": 0,
-            "value": 0.562745914473422,
-            "value_interpretation": "medium"
+            "confidence_interval_interpretation": "good",
+            "sample_size": 5,
+            "sample_size_interpretation": "above",
+            "unique_learner_count": 1,
+            "value": 0.0423257176332748,
+            "value_interpretation": "low"
           },
           "page_ids": [
             "313"
@@ -45,15 +45,15 @@
           ],
           "clue": {
             "confidence_interval": [
-              0.434350388763339,
-              0.95713719576185
+              0,
+              0.216178717146135
             ],
-            "confidence_interval_interpretation": "bad",
-            "sample_size": 2,
+            "confidence_interval_interpretation": "good",
+            "sample_size": 3,
             "sample_size_interpretation": "below",
             "unique_learner_count": 1,
-            "value": 0.770453517317548,
-            "value_interpretation": "medium"
+            "value": 0.0667744916820703,
+            "value_interpretation": "low"
           },
           "page_ids": [
             "314"
@@ -65,15 +65,15 @@
       ],
       "clue": {
         "confidence_interval": [
-          0.441473756598886,
-          0.968733381407464
+          0,
+          0.118347639732416
         ],
-        "confidence_interval_interpretation": "bad",
-        "sample_size": 2,
-        "sample_size_interpretation": "below",
+        "confidence_interval_interpretation": "good",
+        "sample_size": 8,
+        "sample_size_interpretation": "above",
         "unique_learner_count": 1,
-        "value": 0.697475170372314,
-        "value_interpretation": "medium"
+        "value": 0.0273208546038949,
+        "value_interpretation": "low"
       },
       "page_ids": [
         "313",

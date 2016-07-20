@@ -1,6 +1,6 @@
 # https://tutor-{env}.openstax.org/courses/{courseId}/tasks/{taskId}/steps/{stepIndex}/{milestoneIndex}
 
-![image](./tutor-{env}.openstax.org_courses_{courseId}_tasks_{taskId}_steps_{stepIndex}_{milestoneIndex}.png)
+![image](./screenshots/tutor-{env}.openstax.org_courses_{courseId}_tasks_{taskId}_steps_{stepIndex}_{milestoneIndex}.png)
 
 # AJAX Calls
 

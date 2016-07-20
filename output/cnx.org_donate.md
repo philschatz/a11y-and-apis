@@ -1,6 +1,6 @@
 # https://cnx.org/donate
 
-![image](./cnx.org_donate.png)
+![image](./screenshots/cnx.org_donate.png)
 
 # AJAX Calls
 
@@ -70,7 +70,7 @@
     {
       "count": {
         "collection": 819,
-        "module": 14577
+        "module": 14586
       },
       "id": 5,
       "name": "Science and Technology"

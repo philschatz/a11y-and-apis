@@ -1,6 +1,6 @@
 # https://tutor-{env}.openstax.org/qa/{ecosystemId}/section/{bookSection}
 
-![image](./tutor-{env}.openstax.org_qa_{ecosystemId}_section_{bookSection}.png)
+![image](./screenshots/tutor-{env}.openstax.org_qa_{ecosystemId}_section_{bookSection}.png)
 
 # AJAX Calls
 

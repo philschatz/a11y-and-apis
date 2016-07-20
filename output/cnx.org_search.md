@@ -1,6 +1,6 @@
 # https://cnx.org/search
 
-![image](./cnx.org_search.png)
+![image](./screenshots/cnx.org_search.png)
 
 # AJAX Calls
 
@@ -70,7 +70,7 @@
     {
       "count": {
         "collection": 819,
-        "module": 14577
+        "module": 14586
       },
       "id": 5,
       "name": "Science and Technology"
@@ -148,7 +148,7 @@
     {
       "count": {
         "collection": 819,
-        "module": 14577
+        "module": 14586
       },
       "id": 5,
       "name": "Science and Technology"

@@ -1,44 +1,8 @@
 # https://openstax.org/contact
 
-![image](./openstax.org_contact.png)
+![image](./screenshots/openstax.org_contact.png)
 
 # AJAX Calls
-
-## GET https://openstax.org/app/pages/contact/contact.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 8561 more"
-```
-
-## GET https://openstax.org/app/helpers/backbone/loading-view.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target,  ... 7101 more"
-```
-
-## GET https://openstax.org/app/components/single-select/single-select.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 10082 more"
-```
-
-## GET https://openstax.org/app/components/strips/strips.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 534 more"
-```
-
-## GET https://openstax.org/app/models/csrfmodel.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _model = require('~/helpers/backbo ... 2030 more"
-```
-
-## GET https://openstax.org/app/pages/contact/contact.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 3149 more"
-```
 
 ## GET https://openstax.org/api/v1/pages?type=news.NewsArticle&fields=slug%2Ctitle%2Cdate%2Cauthor%2Cpin_to_top%2Csubheading%2Cbody%2Carticle_image
 
@@ -49,42 +13,6 @@
   },
   "pages": []
 }
-```
-
-## GET https://openstax.org/app/components/loading-section/loading-section.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 2490 more"
-```
-
-## GET https://openstax.org/app/helpers/backbone/collection.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _backbone = require('backbone');\n\nvar _backbone2 = _interopRequir ... 396 more"
-```
-
-## GET https://openstax.org/app/components/select-option/select-option.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 3948 more"
-```
-
-## GET https://openstax.org/app/components/single-select/single-select.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 519 more"
-```
-
-## GET https://openstax.org/app/components/loading-section/loading-section.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 3688 more"
-```
-
-## GET https://openstax.org/app/components/select-option/select-option.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 733 more"
 ```
 
 ## GET https://openstax.org/api/user/
@@ -106,7 +34,7 @@
 
 ```json
 {
-  "csrf_token": "3E8mLO8hnq8UcsNsoLnBr5dSBaDXaSyO"
+  "csrf_token": "NwfeYT4dXeWXmqTH03Zu2d8iMIMIUvwV"
 }
 ```
 

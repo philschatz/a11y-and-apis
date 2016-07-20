@@ -1,38 +1,8 @@
 # https://openstax.org/details/university-physics
 
-![image](./openstax.org_details_university-physics.png)
+![image](./screenshots/openstax.org_details_university-physics.png)
 
 # AJAX Calls
-
-## GET https://openstax.org/app/pages/details/details.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _get = function get(object, proper ... 30251 more"
-```
-
-## GET https://openstax.org/app/helpers/backbone/loading-view.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target,  ... 7101 more"
-```
-
-## GET https://openstax.org/app/components/remover/remover.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 3702 more"
-```
-
-## GET https://openstax.org/app/components/get-this-title/get-this-title.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 6293 more"
-```
-
-## GET https://openstax.org/app/components/strips/strips.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 534 more"
-```
 
 ## GET https://openstax.org/api/v1/pages?type=news.NewsArticle&fields=slug%2Ctitle%2Cdate%2Cauthor%2Cpin_to_top%2Csubheading%2Cbody%2Carticle_image
 
@@ -43,108 +13,6 @@
   },
   "pages": []
 }
-```
-
-## GET https://openstax.org/app/components/loading-section/loading-section.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 2490 more"
-```
-
-## GET https://openstax.org/app/pages/details/author/author.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _dec, _class;\n\nvar _view = require ... 1662 more"
-```
-
-## GET https://openstax.org/app/pages/details/contents/contents.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 3558 more"
-```
-
-## GET https://openstax.org/app/pages/details/partner/partner.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 2759 more"
-```
-
-## GET https://openstax.org/app/pages/details/resource/resource.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 3739 more"
-```
-
-## GET https://openstax.org/app/pages/details/details.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _typeof = typeof Symbol === \"func ... 8936 more"
-```
-
-## GET https://openstax.org/app/components/remover/remover.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 460 more"
-```
-
-## GET https://openstax.org/app/components/get-this-title/pdf-submenu/pdf-submenu.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 2839 more"
-```
-
-## GET https://openstax.org/app/components/get-this-title/print-submenu/print-submenu.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 2865 more"
-```
-
-## GET https://openstax.org/app/components/get-this-title/get-this-title.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _typeof = typeof Symbol === \"func ... 8040 more"
-```
-
-## GET https://openstax.org/app/components/loading-section/loading-section.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 3688 more"
-```
-
-## GET https://openstax.org/app/components/get-this-title/pdf-submenu/pdf-submenu.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 1774 more"
-```
-
-## GET https://openstax.org/app/components/get-this-title/print-submenu/print-submenu.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 1506 more"
-```
-
-## GET https://openstax.org/app/pages/details/author/author.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 1418 more"
-```
-
-## GET https://openstax.org/app/pages/details/partner/partner.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _typeof = typeof Symbol === \"func ... 2102 more"
-```
-
-## GET https://openstax.org/app/pages/details/contents/contents.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 1706 more"
-```
-
-## GET https://openstax.org/app/pages/details/resource/resource.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _typeof = typeof Symbol === \"func ... 3154 more"
 ```
 
 ## GET https://openstax.org/api/user/

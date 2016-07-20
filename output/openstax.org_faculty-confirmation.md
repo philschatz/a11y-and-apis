@@ -1,26 +1,8 @@
 # https://openstax.org/faculty-confirmation
 
-![image](./openstax.org_faculty-confirmation.png)
+![image](./screenshots/openstax.org_faculty-confirmation.png)
 
 # AJAX Calls
-
-## GET https://openstax.org/app/pages/faculty-confirmation/faculty-confirmation.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 2882 more"
-```
-
-## GET https://openstax.org/app/components/strips/strips.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 534 more"
-```
-
-## GET https://openstax.org/app/pages/faculty-confirmation/faculty-confirmation.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 1720 more"
-```
 
 ## GET https://openstax.org/api/v1/pages?type=news.NewsArticle&fields=slug%2Ctitle%2Cdate%2Cauthor%2Cpin_to_top%2Csubheading%2Cbody%2Carticle_image
 

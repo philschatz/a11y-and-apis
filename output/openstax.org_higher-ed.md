@@ -1,38 +1,8 @@
 # https://openstax.org/higher-ed
 
-![image](./openstax.org_higher-ed.png)
+![image](./screenshots/openstax.org_higher-ed.png)
 
 # AJAX Calls
-
-## GET https://openstax.org/app/pages/higher-ed/higher-ed.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 12711 more"
-```
-
-## GET https://openstax.org/app/helpers/backbone/loading-view.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target,  ... 7101 more"
-```
-
-## GET https://openstax.org/app/models/imagemodel.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _model = require('~/helpers/backbo ... 1969 more"
-```
-
-## GET https://openstax.org/app/components/quotes/quotes.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 3598 more"
-```
-
-## GET https://openstax.org/app/components/buckets/buckets.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 5140 more"
-```
 
 ## GET https://openstax.org/api/v1/pages?type=news.NewsArticle&fields=slug%2Ctitle%2Cdate%2Cauthor%2Cpin_to_top%2Csubheading%2Cbody%2Carticle_image
 
@@ -43,99 +13,6 @@
   },
   "pages": []
 }
-```
-
-## GET https://openstax.org/app/pages/higher-ed/higher-ed.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 3535 more"
-```
-
-## GET https://openstax.org/app/components/products-boxes/products-boxes.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 6037 more"
-```
-
-## GET https://openstax.org/app/components/loading-section/loading-section.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 2490 more"
-```
-
-## GET https://openstax.org/app/components/quote/quote.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 2433 more"
-```
-
-## GET https://openstax.org/app/components/quotes/quotes.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 439 more"
-```
-
-## GET https://openstax.org/app/components/bucket/bucket.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 2473 more"
-```
-
-## GET https://openstax.org/app/components/buckets/buckets.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 449 more"
-```
-
-## GET https://openstax.org/app/components/loading-section/loading-section.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 3688 more"
-```
-
-## GET https://openstax.org/app/components/quote/quote.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _typeof = typeof Symbol === \"func ... 5560 more"
-```
-
-## GET https://openstax.org/app/components/bucket/bucket.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _typeof = typeof Symbol === \"func ... 2820 more"
-```
-
-## GET https://openstax.org/app/components/product-box/product-box.js
-
-```json
-"'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = undefined;\n\nvar _createClass = function () { funct ... 2465 more"
-```
-
-## GET https://openstax.org/app/components/products-boxes/products-boxes.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _handlebars = require(\"handlebars ... 490 more"
-```
-
-## GET https://openstax.org/app/components/product-box/product-box.hbs.js
-
-```json
-"\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.template = undefined;\n\nvar _typeof = typeof Symbol === \"func ... 2189 more"
-```
-
-## GET https://openstax.org/api/user/
-
-```json
-[
-  {
-    "accounts_id": null,
-    "groups": [],
-    "is_staff": false,
-    "is_superuser": false,
-    "pending_verification": false,
-    "username": ""
-  }
-]
 ```
 
 ## GET https://openstax.org/api/v1/pages?type=pages.HigherEducation
@@ -156,6 +33,21 @@
     }
   ]
 }
+```
+
+## GET https://openstax.org/api/user/
+
+```json
+[
+  {
+    "accounts_id": null,
+    "groups": [],
+    "is_staff": false,
+    "is_superuser": false,
+    "pending_verification": false,
+    "username": ""
+  }
+]
 ```
 
 ## GET https://openstax.org/api/v1/pages/88/

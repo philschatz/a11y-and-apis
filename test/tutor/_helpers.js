@@ -4,11 +4,11 @@ import {macro, driver, makeUrl} from '../_helpers';
 
 export function tutorLogin(LOGIN_URL_PATTERN, CONFIG) {
 
-  test.before(async () => {
+  test.beforeEach(async (t) => {
     const {username, password} = CONFIG;
 
     const url = makeUrl(LOGIN_URL_PATTERN, CONFIG);
-    // const {driver} = t.context;
+    const {driver} = t.context;
     // open the page
     await driver.get(url);
     // wait for the login prompt on accounts
