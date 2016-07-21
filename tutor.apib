@@ -97,6 +97,51 @@ Array of `[chapter, section]`
 + role (User Role, required)
 + course (Course Blurb, required)
 
+## Teacher Student Scores Period Data Heading (object)
++ title: `3 part MPQ` (string, required)
++ plan_id: `69` (number, required)
++ type: homework, reading (enum, required)
++ due_at: `2016-07-15T12:00:00.000Z` (Timestamp, required)
++ average_score': `0.0277777777777778` (number, required)
+
+## Teacher Student Scores User Data (object)
++ type: `homework` (string, required)
++ id: `1362` (number, required)
++ status: `not_started` (string, required)
++ step_count: `4` (number, required)
++ completed_step_count: `0` (number, required)
++ completed_on_time_step_count: `0` (number, required)
++ completed_accepted_late_step_count: `0` (number, required)
++ exercise_count: `4` (number, required)
++ completed_exercise_count: `0` (number, required)
++ completed_on_time_exercise_count: `0` (number, required)
++ completed_accepted_late_exercise_count: `0` (number, required)
++ correct_exercise_count: `0` (number, required)
++ correct_on_time_exercise_count: `0` (number, required)
++ correct_accepted_late_exercise_count: `0` (number, required)
++ score: `0.9` (number, required)
++ recovered_exercise_count: `0` (number, required)
++ due_at: `2016-07-15T12:00:00.000Z` (Timestamp, required)
++ is_late_work_accepted: `false` (boolean, required)
++ is_included_in_averages: `true` (boolean, required)
+
+
+## Teacher Student Scores User (object)
++ name: `Rabbit Angstrom` (string, required)
++ first_name: `Rabbit` (string, required)
++ last_name: `Angstrom` (string, required)
++ role: 9 (number, required) - _TODO:_ Use `role_id` and make it a string
++ student_identifier: `JQMVOWU2PA` (string, required)
++ average_score: `0.9` (number, required)
++ data (array[Teacher Student Scores User Data], required) - This has to match the length of the Data Headings
+
+
+## Teacher Student Scores Period (object)
++ period_id: `1` (string, required)
++ overall_average_score: `0.0222` (number, required)
++ data_headings (array[Teacher Student Scores Period Data Heading], required)
++ students (array[Teacher Student Scores User], required)
+
 
 # Teacher Assignments [/plans/{planId}]
 
@@ -114,8 +159,20 @@ Array of `[chapter, section]`
 ## Get Events for a date range [GET /courses/{courseId}/dashboard{?start_at,end_at}]
 
 + Parameters
+    + courseId: `1` (number, required)
     + start_at: `2016-06-30` (Date, required)
     + end_at: `2016-08-01` (Date, required)
 
 + Response 200 (application/json)
   + Attributes (Teacher Dashboard)
+
+
+# Student Scores [/courses/{courseId}/performance]
+
+## Get Matrix of Student Scores [GET /courses/{courseId}/performance]
+
++ Parameters
+    + courseId: `1` (number, required)
+
++ Response 200 (application/json)
+  + Attributes (array[Teacher Student Scores Period])
