@@ -8,6 +8,9 @@ _TODO:_
 
 # Data Structures
 
+## URL (string)
+A fully qualified URL
+
 ## Date (string)
 An ISO date (no time or timezone information)
 
@@ -143,9 +146,64 @@ Array of `[chapter, section]`
 + students (array[Teacher Student Scores User], required)
 
 
-# Teacher Assignments [/plans/{planId}]
+## Assignment Task (object)
++ id: `2014` (string, required)
++ is_feedback_available: `true` (boolean, required)
++ is_shared: `false` (boolean, required)
++ spy (Task Spy Data, required)
++ steps (array[Assignment Task Step], required)
++ title: `Practice` (string, required)
++ type: `page_practice` (string, required)
 
-## Statistics [GET /plans/{planId}/stats]
+### Task Spy Data (object)
+_TODO:_ Unknown what this contains
+
+### Assignment Task Step (object)
++ id: `11322` (string, required)
++ type: exercise (enum, required)
++ group: default (enum, required)
++ task_id: `2014` (string, required)
++ has_recovery: `false` (boolean, required)
++ is_completed: `false` (boolean, required)
++ is_in_multipart: `false` (boolean, required)
++ labels (array[Task Step Label], required)
++ question_id: `30` (string, required)
++ related_content' (array[Page Details], required)
++ content (Task Step Exercise Content, required)
++ content_url: `https://exercises-dev.openstax.org/exercises/30@1` (URL, required)
+
+### Page Details (object)
++ title: `The Science of Biology` (string, required)
++ chapter_section (Chapter Section, required)
+
+### Task Step Label (object)
+_TODO:_ Figure out what this is
+
+### Task Step Exercise Content (object)
++ authors (array[Exercise User], required)
++ copyright_holders (array[Exercise User], required)
++ derived_from (array) - _TODO_ Not sure what the format of this is. Also, should it be an Array or a nullable field?
++ editors (array[Exercise User], required)
++ is_vocab: `false` (boolean, required)
++ number: `30` (number, required) - _TODO_ should this be `count`? It is unclear what the number is
++ published_at: `2015-09-16T20:13:33.142Z` (Timestamp, required)
++ questions (array[Exercise Question], required)
++ stimulus_html: `To answer the following questions you need to know the formula for Force` (string, required)
++ tags: `book:stax-apbio`, `filter-type:import:hs` (array[string])
++ uid: `30@1` (string, required)
++ version: `1` (number, required)
+
+### Exercise User (object)
++ name: `OpenStax` (string, required)
++ user_id': `1` (string, required)
+
+### Exercise Question (object)
+_TODO:_ Fill in the JSON schema for a question
+
+
+# Teacher Course Routes [/courses/{courseId}]
+
+## Get Teacher Assignment Statistics [GET /plans/{planId}/stats]
 
 + Parameters
     + planId: `69` (number, required)
@@ -153,8 +211,6 @@ Array of `[chapter, section]`
 + Response 200 (application/json)
     + Attributes (Teacher Plan Stats)
 
-
-# Teacher Course Dashboard [/courses/{courseId}/dashboard{?start_at,end_at}]
 
 ## Get Events for a date range [GET /courses/{courseId}/dashboard{?start_at,end_at}]
 
@@ -167,8 +223,6 @@ Array of `[chapter, section]`
   + Attributes (Teacher Dashboard)
 
 
-# Student Scores [/courses/{courseId}/performance]
-
 ## Get Matrix of Student Scores [GET /courses/{courseId}/performance]
 
 + Parameters
@@ -176,3 +230,23 @@ Array of `[chapter, section]`
 
 + Response 200 (application/json)
   + Attributes (array[Teacher Student Scores Period])
+
+
+# Task Routes [/tasks/{taskId}]
+
+## Get a single Task [GET /tasks/{taskId}]
+
++ Parameters
+    + taskId: `2014` (number, required)
+
++ Response 200 (application/json)
+  + Attributes (Assignment Task)
+
+
+## Get a single Task Step [GET /steps/{stepId}]
+
++ Parameters
+    + stepId: `11322` (number, required)
+
++ Response 200 (application/json)
+  + Attributes (Assignment Task Step)
