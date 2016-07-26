@@ -10,6 +10,7 @@
 # Api Blueprint files
 
 - http://docs.openstaxcnx.apiary.io/ ([Source](./cnx.apib))
+- http://docs.openstaxtutor.apiary.io/ ([Source](./tutor.apib))
 
 # How it works
 
