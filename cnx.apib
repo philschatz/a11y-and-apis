@@ -202,7 +202,16 @@ This is a subtype of string used to mark HTML in the API
 
 # Page Retrieval [/contents/{pageUuidAndVer}]
 
-## Get a single Page as JSON [GET /contents/{pageUuidAndVer}.json]
+## Get a single Page as JSON using a UUID [GET /contents/{pageUuidAndVer}.json]
+
++ Parameters
+    + pageUuidAndVer: `1d1fd537-77fb-4eac-8a8a-60bbaa747b6d@3` (string, required)
+
++ Response 200 (application/json)
+    + Attributes (Page)
+
+
+## Get a single Page as JSON using a short UUID [GET /contents/{pageUuidAndVer}.json]
 
 + Parameters
     + pageUuidAndVer: `HR_VN3f7@3` (string, required)
@@ -406,7 +415,7 @@ _TODO:_ answer "Are all of these fields necessary for every page load?"
 + Response 200 (application/json)
 
     + Attributes (Site Extras)
-
+    
 ## Get simulations that can be included in content [GET /specials]
 
 _TODO:_ Can/should this have a JSON representation? Also, why the `<style>` tag and the `class="simulation-links"`? That seems like an odd API...
