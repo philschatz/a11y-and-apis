@@ -10,6 +10,8 @@
 # Api Blueprint files
 
 - http://docs.openstaxcnx.apiary.io/ ([Source](./cnx.apib))
+  - Example: Go to [Get a Page UUID from production](http://docs.openstaxcnx.apiary.io/#reference/0/page-retrieval/get-a-single-page-as-json-using-a-uuid?console=1) and then click `[Call Resource]`
+  - Example: Go to [Search and get Results](http://docs.openstaxcnx.apiary.io/#reference/0/search/search-and-get-results) and then enter some text to search (ie `selenium`) and click `[Call Resource]`
 - http://docs.openstaxtutor.apiary.io/ ([Source](./tutor.apib))
 
 # How it works
