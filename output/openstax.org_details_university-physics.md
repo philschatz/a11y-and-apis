@@ -138,3 +138,21 @@
 ]
 ```
 
+
+# WCAG2A Errors
+
+Showing first 50 of 10 errors
+
+```
+ERROR a[href='#maincontent'] WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+ERROR img.book-cover[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/university-physics.svg'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+warning div.tabs WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#resources'].tab WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+ERROR a[href='#student-resources-section'].tab WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning div.cta WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+warning table.publish-info WCAG2A.Principle1.Guideline1_3.1_3_1.H39.3.NoCaption
+ERROR img[src='/images/details/by-license.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+```
+

@@ -30,3 +30,14 @@
 ]
 ```
 
+
+# WCAG2A Errors
+
+Showing first 50 of 3 errors
+
+```
+ERROR a[href='#maincontent'] WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+warning h2 WCAG2A.Principle1.Guideline1_3.1_3_1_A.G141
+```
+

@@ -15,6 +15,21 @@
 }
 ```
 
+## GET https://openstax.org/api/user/
+
+```json
+[
+  {
+    "accounts_id": null,
+    "groups": [],
+    "is_staff": false,
+    "is_superuser": false,
+    "pending_verification": false,
+    "username": ""
+  }
+]
+```
+
 ## GET https://openstax.org/api/v1/pages?type=pages.HigherEducation
 
 ```json
@@ -33,21 +48,6 @@
     }
   ]
 }
-```
-
-## GET https://openstax.org/api/user/
-
-```json
-[
-  {
-    "accounts_id": null,
-    "groups": [],
-    "is_staff": false,
-    "is_superuser": false,
-    "pending_verification": false,
-    "username": ""
-  }
-]
 ```
 
 ## GET https://openstax.org/api/v1/pages/88/
@@ -161,5 +161,16 @@
   "title": "Concept Coach Students Larger Image",
   "width": 4206
 }
+```
+
+
+# WCAG2A Errors
+
+Showing first 50 of 3 errors
+
+```
+ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+ERROR a[href='#getting-started'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+warning h3.title WCAG2A.Principle1.Guideline1_3.1_3_1_A.G141
 ```
 

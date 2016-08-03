@@ -4,98 +4,120 @@
 
 # AJAX Calls
 
-## GET /api/ecosystems/4/readings
+## GET /api/ecosystems/5/readings
 
 ```json
 [
   {
-    "archive_url": "https://archive-staging-tutor.cnx.org",
+    "archive_url": "https://archive.cnx.org",
     "chapter_section": [],
     "children": [
       {
         "chapter_section": [
-          37
+          33
         ],
         "children": [
           {
             "chapter_section": [
-              37,
-              2
+              33,
+              5
             ],
-            "cnx_id": "81ba476c-4db2-47fe-a315-f63dba818a51@21",
-            "id": "510",
-            "title": "Energy Flow through Ecosystems",
+            "cnx_id": "6cd5137c-4c27-4175-a5e7-caf448561fd7@2",
+            "id": "785",
+            "short_id": "bNUTfEwn",
+            "title": "Quarks: Is That All There Is?",
             "type": "page",
-            "uuid": "81ba476c-4db2-47fe-a315-f63dba818a51"
+            "uuid": "6cd5137c-4c27-4175-a5e7-caf448561fd7"
           },
           {
             "chapter_section": [
-              37,
-              3
+              33,
+              6
             ],
-            "cnx_id": "77e9b486-5d40-4fca-8a77-b049590ecb86@19",
-            "id": "511",
-            "title": "Biogeochemical Cycles",
+            "cnx_id": "e304dd51-86de-4012-af91-8689a9eb4733@2",
+            "id": "786",
+            "short_id": "4wTdUYbe",
+            "title": "GUTs: The Unification of Forces",
             "type": "page",
-            "uuid": "77e9b486-5d40-4fca-8a77-b049590ecb86"
+            "uuid": "e304dd51-86de-4012-af91-8689a9eb4733"
           },
-          "... skipped 2"
+          "... skipped 5"
         ],
-        "id": "102",
-        "title": "Ecosystems",
+        "id": "136",
+        "title": "Particle Physics",
         "type": "part"
       },
       {
         "chapter_section": [
-          38
+          34
         ],
         "children": [
           {
             "chapter_section": [
-              38,
-              3
+              34,
+              6
             ],
-            "cnx_id": "1f383a77-28e1-4731-b53b-838f52ddc587@5",
-            "id": "515",
-            "title": "Threats to Biodiversity",
+            "cnx_id": "268333ac-bace-432d-9e5b-0c8a58bac4b5@2",
+            "id": "793",
+            "short_id": "JoMzrLrO",
+            "title": "High-temperature Superconductors",
             "type": "page",
-            "uuid": "1f383a77-28e1-4731-b53b-838f52ddc587"
+            "uuid": "268333ac-bace-432d-9e5b-0c8a58bac4b5"
           },
           {
             "chapter_section": [
-              38,
-              4
+              34,
+              7
             ],
-            "cnx_id": "d27666c2-d08e-4ca4-aa45-4af2263a07dd@4",
-            "id": "516",
-            "title": "Preserving Biodiversity",
+            "cnx_id": "3732ec62-7816-452c-b100-334a28464590@2",
+            "id": "794",
+            "short_id": "NzLsYngW",
+            "title": "Some Questions We Know to Ask",
             "type": "page",
-            "uuid": "d27666c2-d08e-4ca4-aa45-4af2263a07dd"
+            "uuid": "3732ec62-7816-452c-b100-334a28464590"
           },
-          "... skipped 3"
+          "... skipped 6"
         ],
-        "id": "103",
-        "title": "Conservation Biology and Biodiversity",
+        "id": "137",
+        "title": "Frontiers of Physics",
         "type": "part"
       },
-      "... skipped 36"
+      "... skipped 32"
     ],
-    "cnx_id": "d52e93f4-8653-4273-86da-3850001c0786@9.14",
-    "id": "4",
-    "title": "Biology For AP® Courses",
+    "cnx_id": "405335a3-7cff-4df2-a9ad-29062a4af261@6.97",
+    "id": "5",
+    "short_id": "QFM1o3z_",
+    "title": "College Physics with Courseware",
     "type": "part",
-    "uuid": "d52e93f4-8653-4273-86da-3850001c0786",
-    "webview_url": "https://archive-staging-tutor.cnx.org"
+    "uuid": "405335a3-7cff-4df2-a9ad-29062a4af261",
+    "webview_url": "https://cnx.org"
   }
 ]
 ```
 
-## GET /api/ecosystems/4/exercises/?page_ids%5B%5D=312
+## GET /api/ecosystems/5/exercises/?page_ids%5B%5D=517
 
 ```json
 {
   "items": [],
   "total_count": 0
 }
+```
+
+
+# WCAG2A Errors
+
+Showing first 50 of 9 errors
+
+```
+ERROR html WCAG2A.Principle3.Guideline3_1.3_1_1.H57.2
+ERROR a[href=''][aria-selected='false'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId
+warning a[href=''][aria-selected='false'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a#available-books.dropdown-toggle[type='button'][aria-haspopup='true'][aria-expanded='false'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoHref
+warning a#navbar-dropdown.dropdown-toggle[type='button'][aria-haspopup='true'][aria-expanded='false'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoHref
+ERROR a[href='#'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+warning h3 WCAG2A.Principle1.Guideline1_3.1_3_1_A.G141
+ERROR a.page-navigation.next[href='/qa/5/section/1.1'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+ERROR a[href='#spy'].debug-toggle-link WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
 ```
 

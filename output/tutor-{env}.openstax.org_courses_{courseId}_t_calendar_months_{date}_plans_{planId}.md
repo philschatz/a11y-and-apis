@@ -4,65 +4,32 @@
 
 # AJAX Calls
 
-## GET /api/plans/69/stats
 
-```json
-{
-  "id": "69",
-  "shareable_url": "/@/kEyX0d/3-part-mpq",
-  "stats": [
-    {
-      "complete_count": 1,
-      "current_pages": [
-        {
-          "chapter_section": [
-            1,
-            2
-          ],
-          "correct_count": 2,
-          "id": "314",
-          "incorrect_count": 2,
-          "is_trouble": false,
-          "student_count": 1,
-          "title": "Themes and Concepts of Biology"
-        }
-      ],
-      "is_trouble": false,
-      "mean_grade_percent": 50,
-      "name": "2nd",
-      "partially_complete_count": 0,
-      "period_id": "2",
-      "spaced_pages": [],
-      "total_count": 10
-    },
-    {
-      "complete_count": 1,
-      "current_pages": [
-        {
-          "chapter_section": [
-            1,
-            2
-          ],
-          "correct_count": 1,
-          "id": "314",
-          "incorrect_count": 3,
-          "is_trouble": false,
-          "student_count": 1,
-          "title": "Themes and Concepts of Biology"
-        }
-      ],
-      "is_trouble": false,
-      "mean_grade_percent": 50,
-      "name": "4th",
-      "partially_complete_count": 0,
-      "period_id": "4",
-      "spaced_pages": [],
-      "total_count": 11
-    },
-    "... skipped 2"
-  ],
-  "title": "3 part MPQ",
-  "type": "homework"
-}
+
+# WCAG2A Errors
+
+Showing first 50 of 20 errors
+
+```
+ERROR html WCAG2A.Principle3.Guideline3_1.3_1_1.H57.2
+ERROR a.navbar-brand.navbar-brand[href='/dashboard/'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+warning a#navbar-dropdown.dropdown-toggle[type='button'][aria-haspopup='true'][aria-expanded='false'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoHref
+ERROR a[href='#'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+warning div.calendar-actions.row WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+warning div.calendar-header-label.col-xs-4 WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#'].calendar-header-control.previous WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+ERROR a[href='#'].calendar-header-control.next WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+warning label[data-opens-at='7/6'][data-title='3 part MPQ'] WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+ERROR a[href='#spy'].debug-toggle-link WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning h4.modal-title WCAG2A.Principle1.Guideline1_3.1_3_1_A.G141
+warning a[role='tab'][href=''][aria-selected='true'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='tab'][href=''][aria-selected='false'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='tab'][href=''][aria-selected='false'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='tab'][href=''][aria-selected='false'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning div.left-buttons WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+warning a.get-link[aria-describedby='sharable-link-popover1'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
 ```
 

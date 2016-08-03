@@ -78,6 +78,7 @@
       "has_interactive": false,
       "has_video": false,
       "id": "46",
+      "page_uuid": "0c917d7d-0d1d-4a21-afbe-7d66bce2782c",
       "pool_types": [
         "practice_widget",
         "all_exercises"
@@ -166,6 +167,7 @@
       "has_interactive": false,
       "has_video": false,
       "id": "48",
+      "page_uuid": "0c917d7d-0d1d-4a21-afbe-7d66bce2782c",
       "pool_types": [
         "practice_widget",
         "all_exercises"
@@ -189,5 +191,64 @@
   ],
   "total_count": 18
 }
+```
+
+
+# WCAG2A Errors
+
+Showing first 50 of 87 errors
+
+```
+warning label[for='76-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='76-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='76-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='76-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='77-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='77-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='77-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='77-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='78-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='78-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='78-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='78-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='53-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='53-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='53-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='53-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='54-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='54-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='54-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='54-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='79-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='79-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='79-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='79-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='42-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='42-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='42-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='42-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='43-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='43-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='43-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='43-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='44-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='44-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='44-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='44-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='45-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='45-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='45-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='45-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='46-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='46-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='46-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='46-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='48-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='48-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='48-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='48-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+ERROR a.page-navigation.next[href='/qa/1/section/2.2'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+ERROR a[href='#spy'].debug-toggle-link WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+undefined undefined undefined
 ```
 

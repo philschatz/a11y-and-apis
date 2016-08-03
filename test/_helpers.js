@@ -4,6 +4,8 @@ import test from 'ava';
 import selenium from 'selenium-webdriver';
 import urltemplate from 'url-template';
 
+import codeSnifferCode from './_code-sniffer-code';
+
 // import {listenToAjax} from './_xhr-helper'; // read it from fs because babel inje
 
 const DEFAULT_TIMEOUT = 30 * 1000; // wait 10sec before failing a test (change this if doing performance tests)
@@ -19,6 +21,7 @@ const builder = new selenium.Builder()
 
 const listenToAjax = fs.readFileSync(path.join(__dirname, '_xhr-helper.js'), 'utf8');
 
+
 function titleToFilename(title) {
   return title
     .replace(/^afterEach\ for\ /, '') // ava prepends the test name to this string
@@ -28,8 +31,7 @@ function titleToFilename(title) {
 }
 
 // Modifies the JSON in-place
-function simplifyJson(json) {
-  const ARRAY_MAX_LEN = 2;
+function simplifyJson(json, arrayMaxLen=2) {
   const STRING_MAX_LEN = 150;
 
   if (!json) {
@@ -39,10 +41,10 @@ function simplifyJson(json) {
       json = `${json.substring(0, STRING_MAX_LEN)} ... ${json.length - STRING_MAX_LEN} more`
     }
   } else if (Array.isArray(json)) {
-    if (json.length > ARRAY_MAX_LEN) {
+    if (json.length > arrayMaxLen) {
       const len = json.length;
-      json.splice(0, len - ARRAY_MAX_LEN);
-      json.push(`... skipped ${len - ARRAY_MAX_LEN}`);
+      json.splice(0, len - arrayMaxLen);
+      json.push(`... skipped ${len - arrayMaxLen}`);
     }
     json.forEach(simplifyJson);
   } else if (typeof json === 'object' && Object.keys(json).length > 0) {
@@ -67,12 +69,69 @@ test.beforeEach(async t => {
 })
 
 test.afterEach(async t => {
+  await t.context.driver.executeAsyncScript(codeSnifferCode);
+  let wcagMessages = await t.context.driver.executeAsyncScript(function() {
+    // Standards can be found in https://github.com/squizlabs/HTML_CodeSniffer/tree/master/Standards
+    var cb = arguments[arguments.length - 1];
+
+    function generateSelector(target) {
+      var attr, i, j, ref, selector;
+      selector = [target.tagName.toLowerCase()];
+      for (i = j = 0, ref = target.attributes.length; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
+        attr = target.attributes.item(i);
+        if (attr.name === 'style') {
+          // discard style attributes
+        }
+        else if (attr.name === 'class') {
+          selector.push("." + (attr.value.split(' ').join('.')));
+        } else if (attr.name === 'id') {
+          selector.push("#" + attr.value);
+        } else if (attr.name !== 'data-reactid') {
+          selector.push("[" + attr.name + "='" + attr.value + "']");
+        }
+      }
+      return selector.join('');
+    };
+
+    var callback = function() {
+      var messages = window.HTMLCS.getMessages()
+      var messagesWithSelectorsInsteadOfElements = messages.map(function(msg) {
+        var type = msg.type;
+        var element = msg.element;
+        var code = msg.code;
+        var data = msg.data;
+        // remove any border, because generateSelector will use the style attribute
+        if (element && element.style) {
+          delete element.style.border;
+        }
+        var selector = generateSelector(element);
+        if (element && element.style) {
+          element.style.border = '2px solid rgb(255, 0, 0)';
+        }
+        return {
+          type: type,
+          selector: selector,
+          // element: element,
+          code: code,
+          data: data
+        };
+      });
+      cb(messagesWithSelectorsInsteadOfElements);
+    };
+    var failCallback = callback;
+    window.HTMLCS.process('WCAG2A', window.document, callback, failCallback);
+  });
+  // remove all the notices and just show warnings and errors
+  wcagMessages = wcagMessages.filter(({type}) => type === 1 || type === 2);
+  console.log('WCAG2A_ERRORS', wcagMessages.length);
+
+
   // only run when test was successful because phantomjs could have failed earlier
   const theLog = await t.context.driver.executeAsyncScript(function() {
     arguments[arguments.length - 1](window.__THE_LOG);
   });
 
-  if (theLog.length > 0) {
+  if (theLog.length > 0 || wcagMessages.length > 0) {
 
     const filename = titleToFilename(t.title);
     const pattern = t.title.replace(/^afterEach\ for\ /, ''); // ava prepends the test name to this string
@@ -97,6 +156,24 @@ ${JSON.stringify(simplifiedJson, null, 2)}
 # AJAX Calls
 
 ${entries.join('\n')}
+
+# WCAG2A Errors
+
+Showing first 50 of ${wcagMessages.length} errors
+
+\`\`\`
+${simplifyJson(wcagMessages, 50).map(({type, selector, code}) => {
+  if (type === 1) {
+    type = 'ERROR';
+  } else if (type === 2) {
+    type = 'warning';
+  } else if (type === 3) {
+    type = 'info';
+  }
+  return type + ' ' + selector + ' ' + code;
+}).join('\n')}
+\`\`\`
+
 `;
 
     fs.writeFileSync(`${OUTPUT_PATH}/${filename}.md`, md);
