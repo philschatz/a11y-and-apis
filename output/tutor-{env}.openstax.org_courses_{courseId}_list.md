@@ -21,15 +21,15 @@
           ],
           "clue": {
             "confidence_interval": [
-              0,
-              0.15563502710434
+              0.783821282853865,
+              1
             ],
             "confidence_interval_interpretation": "good",
-            "sample_size": 5,
-            "sample_size_interpretation": "above",
+            "sample_size": 3,
+            "sample_size_interpretation": "below",
             "unique_learner_count": 1,
-            "value": 0.0423257176332748,
-            "value_interpretation": "low"
+            "value": 0.93322550831793,
+            "value_interpretation": "high"
           },
           "page_ids": [
             "313"
@@ -45,15 +45,15 @@
           ],
           "clue": {
             "confidence_interval": [
-              0,
-              0.216178717146135
+              0.820858723472075,
+              1
             ],
             "confidence_interval_interpretation": "good",
-            "sample_size": 3,
-            "sample_size_interpretation": "below",
+            "sample_size": 4,
+            "sample_size_interpretation": "above",
             "unique_learner_count": 1,
-            "value": 0.0667744916820703,
-            "value_interpretation": "low"
+            "value": 0.948189315166727,
+            "value_interpretation": "high"
           },
           "page_ids": [
             "314"
@@ -66,14 +66,14 @@
       "clue": {
         "confidence_interval": [
           0,
-          0.118347639732416
+          1
         ],
-        "confidence_interval_interpretation": "good",
-        "sample_size": 8,
-        "sample_size_interpretation": "above",
+        "confidence_interval_interpretation": "bad",
+        "sample_size": 0,
+        "sample_size_interpretation": "below",
         "unique_learner_count": 1,
-        "value": 0.0273208546038949,
-        "value_interpretation": "low"
+        "value": 0.5,
+        "value_interpretation": "medium"
       },
       "page_ids": [
         "313",
@@ -91,5 +91,57 @@
   "period_id": "2",
   "title": "Biology For AP® Courses"
 }
+```
+
+
+# WCAG2A Errors
+
+Showing first 50 of 44 errors
+
+```
+ERROR html WCAG2A.Principle3.Guideline3_1.3_1_1.H57.2
+ERROR a.navbar-brand.navbar-brand[href='/dashboard/'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+warning a#navbar-dropdown.dropdown-toggle[type='button'][aria-haspopup='true'][aria-expanded='false'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoHref
+ERROR a[href='#'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+warning a[role='tab'][href=''][tabindex='0'][aria-selected='true'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='tab'][href=''][tabindex='-1'][aria-selected='false'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+ERROR button.-hide-button.btn.btn-default[type='button'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+ERROR button.-hide-button.btn.btn-default[type='button'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+ERROR button.-hide-button.btn.btn-default[type='button'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+ERROR button.-hide-button.btn.btn-default[type='button'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+ERROR button.-hide-button.btn.btn-default[type='button'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+ERROR button.-hide-button.btn.btn-default[type='button'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+ERROR button.-hide-button.btn.btn-default[type='button'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+ERROR button.-hide-button.btn.btn-default[type='button'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+ERROR button.-hide-button.btn.btn-default[type='button'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+ERROR button.-hide-button.btn.btn-default[type='button'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+ERROR button.-hide-button.btn.btn-default[type='button'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+warning div.column-icon.col-sm-1.col-xs-2 WCAG2A.Principle1.Guideline1_3.1_3_1.H42
+ERROR button[aria-describedby='progress-bar-tooltip-1'][type='button'].btn-block.btn.btn-default WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+ERROR button[aria-describedby='progress-bar-tooltip-2'][type='button'].btn-block.btn.btn-default WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+ERROR a[href='#spy'].debug-toggle-link WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
 ```
 

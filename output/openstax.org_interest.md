@@ -30,3 +30,22 @@
 ]
 ```
 
+
+# WCAG2A Errors
+
+Showing first 50 of 11 errors
+
+```
+ERROR a[href='#maincontent'] WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+warning label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning select[name='00NU00000053nzR'][multiple=''][required=''].hidden WCAG2A.Principle1.Guideline1_3.1_3_1.H85.2
+warning label.question WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning select[name='00NU00000055spm'][multiple=''].hidden WCAG2A.Principle1.Guideline1_3.1_3_1.H85.2
+warning select[name='00NU00000055spr'][multiple=''][required=''].hidden WCAG2A.Principle1.Guideline1_3.1_3_1.H85.2
+warning label#other-source.hidden WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+```
+

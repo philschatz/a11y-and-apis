@@ -30,14 +30,6 @@
 ]
 ```
 
-## GET https://openstax.org/api/mail/send_mail/
-
-```json
-{
-  "csrf_token": "NwfeYT4dXeWXmqTH03Zu2d8iMIMIUvwV"
-}
-```
-
 ## GET https://openstax.org/api/v1/pages?type=pages.ContactUs&fields=title%2Ctagline%2Cmailing_header%2Cmailing_address%2Cphone_number
 
 ```json
@@ -60,5 +52,24 @@
     }
   ]
 }
+```
+
+
+# WCAG2A Errors
+
+Showing first 50 of 11 errors
+
+```
+ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+ERROR select.hidden WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Select.Name
+warning select.hidden WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Select.Value
+ERROR select.hidden WCAG2A.Principle1.Guideline1_3.1_3_1.F68
+warning select.hidden WCAG2A.Principle1.Guideline1_3.1_3_1.H85.2
+ERROR input[name='name'][type='text'][size='20'][required=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.InputText.Name
+ERROR input[name='name'][type='text'][size='20'][required=''] WCAG2A.Principle1.Guideline1_3.1_3_1.F68
+ERROR input[name='email'][pattern='[^@]+@([^@\.]+\.)+[^@\.]+'][type='text'][required=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.InputText.Name
+ERROR input[name='email'][pattern='[^@]+@([^@\.]+\.)+[^@\.]+'][type='text'][required=''] WCAG2A.Principle1.Guideline1_3.1_3_1.F68
+ERROR textarea[cols='50'][name='description'][rows='6'][required=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Textarea.Name
+ERROR textarea[cols='50'][name='description'][rows='6'][required=''] WCAG2A.Principle1.Guideline1_3.1_3_1.F68
 ```
 

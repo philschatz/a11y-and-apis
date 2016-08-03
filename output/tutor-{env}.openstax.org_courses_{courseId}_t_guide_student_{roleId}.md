@@ -21,15 +21,15 @@
           ],
           "clue": {
             "confidence_interval": [
-              0,
+              0.783821282853865,
               1
             ],
-            "confidence_interval_interpretation": "bad",
-            "sample_size": 0,
+            "confidence_interval_interpretation": "good",
+            "sample_size": 3,
             "sample_size_interpretation": "below",
             "unique_learner_count": 1,
-            "value": 0.5,
-            "value_interpretation": "medium"
+            "value": 0.93322550831793,
+            "value_interpretation": "high"
           },
           "page_ids": [
             "313"
@@ -45,15 +45,15 @@
           ],
           "clue": {
             "confidence_interval": [
-              0,
-              0.179141276527925
+              0.34020793706504,
+              0.793797208732559
             ],
             "confidence_interval_interpretation": "good",
-            "sample_size": 4,
+            "sample_size": 7,
             "sample_size_interpretation": "above",
             "unique_learner_count": 1,
-            "value": 0.0518106848332736,
-            "value_interpretation": "low"
+            "value": 0.567002572898799,
+            "value_interpretation": "medium"
           },
           "page_ids": [
             "314"
@@ -66,14 +66,14 @@
       "clue": {
         "confidence_interval": [
           0,
-          0.179141276527925
+          1
         ],
-        "confidence_interval_interpretation": "good",
-        "sample_size": 4,
-        "sample_size_interpretation": "above",
+        "confidence_interval_interpretation": "bad",
+        "sample_size": 0,
+        "sample_size_interpretation": "below",
         "unique_learner_count": 1,
-        "value": 0.0518106848332736,
-        "value_interpretation": "low"
+        "value": 0.5,
+        "value_interpretation": "medium"
       },
       "page_ids": [
         "313",
@@ -99,7 +99,7 @@
               1
             ],
             "confidence_interval_interpretation": "bad",
-            "sample_size": 0,
+            "sample_size": 1,
             "sample_size_interpretation": "below",
             "unique_learner_count": 1,
             "value": 0.5,
@@ -119,15 +119,15 @@
           ],
           "clue": {
             "confidence_interval": [
-              0,
+              0.84436497289566,
               1
             ],
-            "confidence_interval_interpretation": "bad",
-            "sample_size": 0,
-            "sample_size_interpretation": "below",
+            "confidence_interval_interpretation": "good",
+            "sample_size": 5,
+            "sample_size_interpretation": "above",
             "unique_learner_count": 1,
-            "value": 0.5,
-            "value_interpretation": "medium"
+            "value": 0.957674282366725,
+            "value_interpretation": "high"
           },
           "page_ids": [
             "339"
@@ -166,5 +166,59 @@
   "period_id": "1",
   "title": "Biology For AP® Courses"
 }
+```
+
+
+# WCAG2A Errors
+
+Showing first 50 of 46 errors
+
+```
+ERROR html WCAG2A.Principle3.Guideline3_1.3_1_1.H57.2
+ERROR a.navbar-brand.navbar-brand[href='/dashboard/'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+warning a#navbar-dropdown.dropdown-toggle[type='button'][aria-haspopup='true'][aria-expanded='false'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoHref
+ERROR a[href='#'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[role='menuitem'][tabindex='-1'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning h3 WCAG2A.Principle1.Guideline1_3.1_3_1_A.G141
+ERROR a[href='#spy'].debug-toggle-link WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
 ```
 

@@ -30,3 +30,13 @@
 ]
 ```
 
+
+# WCAG2A Errors
+
+Showing first 50 of 2 errors
+
+```
+ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+ERROR a[href='#affiliates'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+```
+

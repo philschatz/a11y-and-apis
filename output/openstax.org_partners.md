@@ -96,3 +96,62 @@
 }
 ```
 
+
+# WCAG2A Errors
+
+Showing first 50 of 53 errors
+
+```
+ERROR a.logo-text[href='#Connect For Education-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#CourseWeaver-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#eMath-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#Expert TA-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#Junction-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#Lrnr-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#Lumen-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#Memory Science-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#Odigia-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#panOpen-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#Rice Online Learning-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#Sapling Learning-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#SimBio-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#Top Hat-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#WebAssign-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#Wiley-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+ERROR a.logo-text[href='#XYZ Homework-blurb'] WCAG2A.Principle1.Guideline1_1.1_1_1.H30.2
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning p WCAG2A.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#filter'].to-top WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+undefined undefined undefined
+```
+
