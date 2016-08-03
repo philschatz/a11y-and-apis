@@ -14,7 +14,9 @@
     "url-template": "^2.0.8"
   },
   "scripts": {
-    "test": "SELENIUM_PHANTOMJS_LOG=.phantomjs.log ava"
+    "start": "drakov -f ./tutor.apib --autoOptions --watch",
+    "test": "SELENIUM_PHANTOMJS_LOG=.phantomjs.log ava",
+    "postinstall": "cd ./node_modules/HTML_CodeSniffer && npm install && grunt build-debug"
   },
   "babel": {
     "presets": [
@@ -31,5 +33,9 @@
       "babel-register"
     ],
     "verbose": true
+  },
+  "dependencies": {
+    "drakov": "^1.0.1",
+    "HTML_CodeSniffer": "squizlabs/HTML_CodeSniffer#master"
   }
 }

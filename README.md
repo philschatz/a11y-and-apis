@@ -19,6 +19,7 @@ Selenium will:
 1. go to the page (maybe have to login)
 2. log AJAX responses
 3. wait for success text
+4. Run the WCAG2A accessibility audit and mark problem elements in red (using https://squizlabs.github.io/HTML_CodeSniffer/)
 4. take a screenshot and save it to [./output/](./output/)
 5. output any AJAX requests to a `.md` file
 4. log time it took (maybe the testing framework does this for free)
