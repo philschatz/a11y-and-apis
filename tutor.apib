@@ -1,5 +1,5 @@
 FORMAT: 1A
-HOST: https://tutor-dev.openstax.org/api/
+HOST: https://tutor-dev.openstax.org/
 
 # tutor
 
@@ -88,7 +88,7 @@ Array of `[chapter, section]`
 
 ## User Role (object)
 + id: `1` (string, required)
-+ type: student, teacher (enum, required)
++ type: teacher, student (enum, required)
 
 ## Course Blurb (object)
 + name: `Biology I` (string, required)
@@ -201,9 +201,66 @@ _TODO:_ Figure out what this is
 _TODO:_ Fill in the JSON schema for a question
 
 
-# Teacher Course Routes [/courses/{courseId}]
+## Current User (object)
++ id: `2` (number, required) - _TODO_ Should probably be a string
++ username: `student1234` (string, required)
++ first_name: `Bob` (string, required)
++ last_name: `Smith` (string, required)
++ full_name: `Robert Smith` (string, required)
++ title: `Mr.` (string)
++ contact_infos (array[User Contact Info], required)
 
-## Get Teacher Assignment Statistics [GET /plans/{planId}/stats]
+### User Contact Info (object)
++ id: `147` (number, required)
++ type: EmailAddress (enum, required)
++ value: `email@example.com` (enum, required)
++ is_verified: `false` (boolean, required)
++ num_pin_verification_attempts_remaining: `5` (number) - This is only available when `is_verified` is `false`
+
+## My Course List Item (object)
++ id: `1` (string, required)
++ name: `Biology for AP Courses` (string, required)
++ time_zone: `Eastern Time (US & Canada)` (string, required) - Actually, it is an enum
++ default_open_time: `00:01` (Time, required)
++ default_due_time: `07:00` (Time, required)
++ salesforce_book_name: `AP Bio` (enum, required) - Actually, it is an enum
++ appearance_code: `biology` (enum, required)
++ ecosystem_id: `1` (string, required)
++ book_pdf_url: `https://archive-staging-tutor.cnx.org/exports/d52e93f4-8653-4273-86da-3850001c0786.pdf` (URL, required)
++ webview_url: `https://staging-tutor.cnx.org/contents/d52e93f4-8653-4273-86da-3850001c0786` (URL, required)
++ is_concept_coach: `false` (boolean, required)
++ is_college: `false` (boolean, required)
++ roles (array[User Role], required)
++ periods (array[Course Period], required)
+
+### Time (string)
+Placeholder for the time format `00:00`
+
+### Course Period (object)
++ id: `1` (string, required)
++ name: `1st` (string, required)
++ enrollment_code: `123456` (string, required)
++ enrollment_url: `https://tutor-qa.openstax.org/enroll/123456` (string, required)
++ default_open_time: `00:01` (Time, required)
++ default_due_time: `07:00` (Time, required)
++ is_archived: `false` (boolean, required)
++ students (array[Course Student], required)
+
+### Course Student (object)
++ id: `466` (string, required)
++ period_id: `6` (string, required)
++ role_id: `123` (string, required)
++ first_name: `Johnny` (string, required)
++ last_name: `Smith` (string, required)
++ name: `John Smith` (string, required) - _TODO_ rename to `full_name`
++ student_identifier: `123` (string, required)
++ deidentifier: `d34db33f` (string, required)
++ is_active: `true` (boolean, required)
+
+
+# Teacher Course Routes [/api/courses/{courseId}]
+
+## Get Teacher Assignment Statistics [GET /api/plans/{planId}/stats]
 
 + Parameters
     + planId: `69` (number, required)
@@ -212,18 +269,20 @@ _TODO:_ Fill in the JSON schema for a question
     + Attributes (Teacher Plan Stats)
 
 
-## Get Events for a date range [GET /courses/{courseId}/dashboard{?start_at,end_at}]
+# Teacher Course Dashboard [/api/courses/{courseId}/dashboard]
+
+## Get Events for a date range [GET /api/courses/{courseId}/dashboard{?start_at,end_at}]
 
 + Parameters
     + courseId: `1` (number, required)
-    + start_at: `2016-06-30` (Date, required)
-    + end_at: `2016-08-01` (Date, required)
+    + start_at: `2016-06-30` (Date)
+    + end_at: `2016-08-01` (Date)
 
 + Response 200 (application/json)
   + Attributes (Teacher Dashboard)
 
 
-## Get Matrix of Student Scores [GET /courses/{courseId}/performance]
+## Get Matrix of Student Scores [GET /api/courses/{courseId}/performance]
 
 + Parameters
     + courseId: `1` (number, required)
@@ -234,7 +293,7 @@ _TODO:_ Fill in the JSON schema for a question
 
 # Task Routes [/tasks/{taskId}]
 
-## Get a single Task [GET /tasks/{taskId}]
+## Get a single Task [GET /api/tasks/{taskId}]
 
 + Parameters
     + taskId: `2014` (number, required)
@@ -243,10 +302,25 @@ _TODO:_ Fill in the JSON schema for a question
   + Attributes (Assignment Task)
 
 
-## Get a single Task Step [GET /steps/{stepId}]
+## Get a single Task Step [GET /api/steps/{stepId}]
 
 + Parameters
     + stepId: `11322` (number, required)
 
 + Response 200 (application/json)
   + Attributes (Assignment Task Step)
+
+# User Route [/api/user]
+
+## Get the Current User [GET /api/user]
+
++ Response 200 (application/json)
+  + Attributes (Current User)
+
+
+# User Courses Route [/api/user/courses]
+
+## List the courses available to the Current User [GET /api/user/courses]
+
++ Response 200 (application/json)
+  + Attributes (array[My Course List Item])
