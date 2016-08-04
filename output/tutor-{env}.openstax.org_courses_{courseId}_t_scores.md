@@ -58,20 +58,61 @@
 ```
 
 
-# WCAG2A Errors
+# WCAG2AAA Errors
 
-Showing first 50 of 10 errors
+Showing first 50 of 161 errors
 
 ```
-ERROR html WCAG2A.Principle3.Guideline3_1.3_1_1.H57.2
-ERROR a.navbar-brand.navbar-brand[href='/dashboard/'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
-warning a#navbar-dropdown.dropdown-toggle[type='button'][aria-haspopup='true'][aria-expanded='false'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoHref
-ERROR a[href='#'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
-ERROR iframe#downloadExport WCAG2A.Principle2.Guideline2_4.2_4_1.H64.1
-warning a[role='tab'][href=''][aria-selected='true'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning a[role='tab'][href=''][aria-selected='false'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning a[role='tab'][href=''][aria-selected='false'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning a[role='tab'][href=''][aria-selected='false'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-ERROR a[href='#spy'].debug-toggle-link WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning span.-name[aria-describedby='name-tooltip-Seymour-Glass'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR span.-name[aria-describedby='name-tooltip-Seymour-Glass'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning div.overall-cell..public_fixedDataTableCell_cellContent WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.-name[aria-describedby='name-tooltip-Bettie-Hackett'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR span.-name[aria-describedby='name-tooltip-Bettie-Hackett'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning div.overall-cell..public_fixedDataTableCell_cellContent WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.-name[aria-describedby='name-tooltip-Giovanny-Jaskolski'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR span.-name[aria-describedby='name-tooltip-Giovanny-Jaskolski'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning div.overall-cell..public_fixedDataTableCell_cellContent WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.-name[aria-describedby='name-tooltip-Albin-Kirlin'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR span.-name[aria-describedby='name-tooltip-Albin-Kirlin'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning div.overall-cell..public_fixedDataTableCell_cellContent WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.-name[aria-describedby='name-tooltip-Kevin-Lowe'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR span.-name[aria-describedby='name-tooltip-Kevin-Lowe'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning div.overall-cell..public_fixedDataTableCell_cellContent WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.-name[aria-describedby='name-tooltip-Ignatius-Reilly'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR span.-name[aria-describedby='name-tooltip-Ignatius-Reilly'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning div.overall-cell..public_fixedDataTableCell_cellContent WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.-name[aria-describedby='name-tooltip-Alyce-Tromp'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR span.-name[aria-describedby='name-tooltip-Alyce-Tromp'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning div.overall-cell.bottom.public_fixedDataTableCell_cellContent WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+warning span.not-started WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='#spy'].debug-toggle-link WCAG2AAA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+undefined undefined undefined
 ```
 

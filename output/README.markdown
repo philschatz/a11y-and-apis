@@ -4,8 +4,8 @@ Some examples:
 
 # Openstax
 
+- [Home page](./openstax.org.md)
 - [Physics Details](./openstax.org_details_university-physics.md)
-- [Partners page](./openstax.org_partners.md)
 
 
 # Tutor
@@ -18,6 +18,7 @@ Some examples:
 
 # cnx
 
+- [Home Page](./cnx.org.md)
 - [Contents Page](./cnx.org_contents_{uuid}.md)
 - [Search Results](./cnx.org_search?q={searchText}.md)
 - [Donate Page](./cnx.org_donate.md)

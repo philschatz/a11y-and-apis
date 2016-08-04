@@ -139,20 +139,61 @@
 ```
 
 
-# WCAG2A Errors
+# WCAG2AAA Errors
 
-Showing first 50 of 10 errors
+Showing first 50 of 90 errors
 
 ```
-ERROR a[href='#maincontent'] WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
-ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
-ERROR img.book-cover[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/university-physics.svg'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-warning div.tabs WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-ERROR a[href='#resources'].tab WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
-ERROR a[href='#student-resources-section'].tab WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning div.cta WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning table.publish-info WCAG2A.Principle1.Guideline1_3.1_3_1.H39.3.NoCaption
-ERROR img[src='/images/details/by-license.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR title WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/impact'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/impact'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/partners'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/partners'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/foundation'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/foundation'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+ERROR img.book-cover[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/university-physics.svg'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+warning div.tabs WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+ERROR a[href='#resources'].tab WCAG2AAA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+ERROR a[href='#student-resources-section'].tab WCAG2AAA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+warning h2 WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
+warning h3 WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
+ERROR a[href='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/Sample_University_Physics_Chapters_20160419.pdf'].btn WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning h3 WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
+warning p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href=''].btn WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href=''].btn WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[href='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/Sample_University_Physics_Chapters_20160419.pdf'].show-pdf-submenu WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/Sample_University_Physics_Chapters_20160419.pdf'].show-pdf-submenu WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning div.cta WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning p.interested-text WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR p.interested-text WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/interest?'].secondary.btn WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/404'].btn.btn-orange WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning h2 WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
+ERROR a.btn.handbook-link[href='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/Student_Toolkit-FINAL.pdf'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning table.publish-info WCAG2AAA.Principle1.Guideline1_3.1_3_1.H39.3.NoCaption
+ERROR img[src='/images/details/by-license.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+ERROR div.hero-quote WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR span.narrow-block WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR a[href='/license'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/tos'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/accessibility-statement'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='https://github.com/openstax'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/contact'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a.btn.btn-social.facebook[href='https://www.facebook.com/openstax'][title='facebook'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+warning a.btn.btn-social.twitter[href='https://twitter.com/openstax'][title='twitter'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+warning a.btn.btn-social.linkedin[href='https://www.linkedin.com/company/openstax'][title='linkedin'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+undefined undefined undefined
 ```
 

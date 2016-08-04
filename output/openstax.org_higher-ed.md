@@ -164,13 +164,61 @@
 ```
 
 
-# WCAG2A Errors
+# WCAG2AAA Errors
 
-Showing first 50 of 3 errors
+Showing first 50 of 91 errors
 
 ```
-ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
-ERROR a[href='#getting-started'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
-warning h3.title WCAG2A.Principle1.Guideline1_3.1_3_1_A.G141
+ERROR a[href='/impact'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/partners'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/partners'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/foundation'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/foundation'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+ERROR h1.header[data-id='intro_heading'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='#getting-started'] WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR i WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR a.btn.btn-orange[href='http://cc.openstax.org/sign-up'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR div.header[data-id='get_started_heading'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR div.title[data-id='get_started_step_1_heading'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/subjects'][data-id='get_started_step_1_cta'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR div.title[data-id='get_started_step_2_heading'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='https://openstax.org/accounts/login/openstax/?next=https://openstax.org/faculty-verification'][data-local='true'][data-id='get_started_step_2_ ... 5 more WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR div.title[data-id='get_started_step_3_heading'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/adoption'][data-id='get_started_step_3_cta'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR div.title[data-id='adopt_heading'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/contact?subject=College/University Partnerships'][data-id='adopt_cta'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR h3.title WCAG2AAA.Principle1.Guideline1_3.1_3_1_AAA.G141
+ERROR a.btn[href='/subjects'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a.btn[href='http://cc.openstax.org'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a.btn[href='//cnx.org'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning span.title WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
+warning p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+ERROR a.btn.btn-cyan[href='http://openstax.org/impact'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning span.title WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
+warning p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+ERROR a.btn.btn-gold[href='http://openstax.org/partners'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR div.hero-quote WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR span.narrow-block WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR a[href='/license'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/tos'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/accessibility-statement'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='https://github.com/openstax'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/contact'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a.btn.btn-social.facebook[href='https://www.facebook.com/openstax'][title='facebook'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+warning a.btn.btn-social.twitter[href='https://twitter.com/openstax'][title='twitter'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+warning a.btn.btn-social.linkedin[href='https://www.linkedin.com/company/openstax'][title='linkedin'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+undefined undefined undefined
 ```
 

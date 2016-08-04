@@ -194,43 +194,61 @@
 ```
 
 
-# WCAG2A Errors
+# WCAG2AAA Errors
 
-Showing first 50 of 33 errors
+Showing first 50 of 82 errors
 
 ```
-ERROR html WCAG2A.Principle3.Guideline3_1.3_1_1.H57.2
-ERROR a.navbar-brand.navbar-brand[href='/dashboard/'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
-warning a#navbar-dropdown.dropdown-toggle[type='button'][aria-haspopup='true'][aria-expanded='false'][href=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoHref
-ERROR a[href='#'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
-ERROR button.openstax-close-x.close.pull-right[aria-role='close'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
-ERROR input#reading-title[required=''][type='text'].form-control[value='3 part MPQ'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.InputText.Name
-ERROR input#reading-title[required=''][type='text'].form-control[value='3 part MPQ'] WCAG2A.Principle1.Guideline1_3.1_3_1.F68
-ERROR textarea[type='text'].form-control.empty WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Textarea.Name
-ERROR textarea[type='text'].form-control.empty WCAG2A.Principle1.Guideline1_3.1_3_1.F68
-ERROR input[type='text'][disabled=''][readonly=''].form-control WCAG2A.Principle4.Guideline4_1.4_1_2.H91.InputText.Name
-ERROR input[type='text'][disabled=''][readonly=''].form-control WCAG2A.Principle1.Guideline1_3.1_3_1.F68
-warning div.date-wrapper WCAG2A.Principle1.Guideline1_3.1_3_1.H42
-ERROR input[required=''][min='2016-08-03'][max='2016-07-15'][value='12:01 am'][name='time'][type='text'].form-control[maxlength='7'][placeholder='__:__ _'][ ... 26 more WCAG2A.Principle4.Guideline4_1.4_1_2.H91.InputText.Name
-ERROR input[required=''][min='2016-08-03'][max='2016-07-15'][value='12:01 am'][name='time'][type='text'].form-control[maxlength='7'][placeholder='__:__ _'][ ... 26 more WCAG2A.Principle1.Guideline1_3.1_3_1.F68
-ERROR input[type='text'][disabled=''][readonly=''].form-control WCAG2A.Principle4.Guideline4_1.4_1_2.H91.InputText.Name
-ERROR input[type='text'][disabled=''][readonly=''].form-control WCAG2A.Principle1.Guideline1_3.1_3_1.F68
-ERROR input[type='text'][value='07/15/2016'].form-control[readonly=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.InputText.Name
-ERROR input[type='text'][value='07/15/2016'].form-control[readonly=''] WCAG2A.Principle1.Guideline1_3.1_3_1.F68
-ERROR input[required=''][min='2016-08-03'][value='7:00 am'][name='time'][type='text'].form-control[maxlength='6'][placeholder='_:__ _'][size='8'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.InputText.Name
-ERROR input[required=''][min='2016-08-03'][value='7:00 am'][name='time'][type='text'].form-control[maxlength='6'][placeholder='_:__ _'][size='8'] WCAG2A.Principle1.Guideline1_3.1_3_1.F68
-warning select#feedback-select.form-control WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Select.Value
-warning select#feedback-select.form-control WCAG2A.Principle1.Guideline1_3.1_3_1.H85.2
-ERROR button.footer-instructions.btn.btn-link[aria-describedby='plan-footer-popover'][type='button'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
-warning h2 WCAG2A.Principle1.Guideline1_3.1_3_1_A.G141
-warning label[for='6408-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='6408-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='6408-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='6408-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='6409-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='6409-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='6410-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='6410-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-ERROR a[href='#spy'].debug-toggle-link WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+ERROR input[type='text'][disabled=''][readonly=''].form-control WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name
+ERROR input[type='text'][disabled=''][readonly=''].form-control WCAG2AAA.Principle1.Guideline1_3.1_3_1.F68
+warning div.floating-label WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR div.floating-label WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR input[type='text'][value='07/15/2016'].form-control[readonly=''] WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name
+ERROR input[type='text'][value='07/15/2016'].form-control[readonly=''] WCAG2AAA.Principle1.Guideline1_3.1_3_1.F68
+ERROR input[required=''][min='2016-08-04'][value='7:00 am'][name='time'][type='text'].form-control[maxlength='6'][placeholder='_:__ _'][size='8'] WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name
+ERROR input[required=''][min='2016-08-04'][value='7:00 am'][name='time'][type='text'].form-control[maxlength='6'][placeholder='_:__ _'][size='8'] WCAG2AAA.Principle1.Guideline1_3.1_3_1.F68
+warning div.floating-label WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR div.floating-label WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning select#feedback-select.form-control WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.Select.Value
+warning select#feedback-select.form-control WCAG2AAA.Principle1.Guideline1_3.1_3_1.H85.2
+warning option[value='immediate'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+warning option[value='due_at'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+warning div.popover-content WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR span WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR button.footer-instructions.btn.btn-link[aria-describedby='plan-footer-popover'][type='button'] WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+ERROR h2 WCAG2AAA.Principle1.Guideline1_3.1_3_1_AAA.G141
+ERROR h2 WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR span WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR td.exercise-number WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.chapter-section[data-chapter-section='1.2'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR td.exercise-number WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR td.exercise-number WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR td.exercise-number WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-number WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR span WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning div.preview.interactive WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+warning label[for='6408-option-0'].answer-label WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+ERROR span.openstax-has-html.answer-content WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning label[for='6408-option-1'].answer-label WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='6408-option-2'].answer-label WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='6408-option-3'].answer-label WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='6409-option-0'].answer-label WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+ERROR span.openstax-has-html.answer-content WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning label[for='6409-option-1'].answer-label WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+warning label[for='6410-option-0'].answer-label WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+ERROR span.openstax-has-html.answer-content WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning label[for='6410-option-1'].answer-label WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+ERROR span WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.lo-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='#spy'].debug-toggle-link WCAG2AAA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+undefined undefined undefined
 ```
 

@@ -31,12 +31,61 @@
 ```
 
 
-# WCAG2A Errors
+# WCAG2AAA Errors
 
-Showing first 50 of 2 errors
+Showing first 50 of 66 errors
 
 ```
-ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
-ERROR a[href='#affiliates'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+warning title WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR title WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/subjects'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/subjects'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/subjects/math'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/subjects/math'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/subjects/science'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/subjects/science'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/subjects/social-sciences'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/subjects/social-sciences'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/subjects/humanities'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/subjects/humanities'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/subjects/ap'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/subjects/ap'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/higher-ed'][role='menuitem'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/higher-ed'][role='menuitem'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/k-12'][role='menuitem'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/k-12'][role='menuitem'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/impact'][role='menuitem'][aria-haspopup='true'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/impact'][role='menuitem'][aria-haspopup='true'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning title WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR title WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/impact'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/impact'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/partners'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/partners'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[href='/foundation'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[href='/foundation'][role='menuitem'][tabindex='-1'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.Button.Name
+ERROR h1.header WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR p.blurb WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='#affiliates'] WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+ERROR a.btn[href='/contact?subject=College/University%20Partnerships'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR div.hero-quote WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR span.narrow-block WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR a[href='/license'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/tos'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/accessibility-statement'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='https://github.com/openstax'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/contact'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a.btn.btn-social.facebook[href='https://www.facebook.com/openstax'][title='facebook'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+warning a.btn.btn-social.twitter[href='https://twitter.com/openstax'][title='twitter'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+warning a.btn.btn-social.linkedin[href='https://www.linkedin.com/company/openstax'][title='linkedin'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+undefined undefined undefined
 ```
 
