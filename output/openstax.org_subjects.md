@@ -141,58 +141,61 @@
 ```
 
 
-# WCAG2A Errors
+# WCAG2AAA Errors
 
-Showing first 50 of 48 errors
+Showing first 50 of 122 errors
 
 ```
-ERROR a[href='#maincontent'] WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
-ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
-warning h2 WCAG2A.Principle1.Guideline1_3.1_3_1_A.G141
-warning h4.subject WCAG2A.Principle1.Guideline1_3.1_3_1_A.G141
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning div.option WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning div.option WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
-warning div.pdf-submenu WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-warning a[href=''].btn WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning a[href=''].btn WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning div.option WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning a[href=''].btn WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[href=''].btn WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning a[href=''].btn WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning a[href=''].btn WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+ERROR h4.subject WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning a[href=''].btn WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning a[href=''].btn WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning a[href=''].btn WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+ERROR h4.subject WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+ERROR h4.subject WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning a[href=''].btn WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning div.option WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning a[href=''].btn WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+warning div.pdf-submenu WCAG2AAA.Principle1.Guideline1_3.1_3_1.H48
+warning a[href=''].btn WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder
+ERROR div.hero-quote WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR span.narrow-block WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR a[href='/license'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/tos'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/accessibility-statement'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='https://github.com/openstax'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/contact'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a.btn.btn-social.facebook[href='https://www.facebook.com/openstax'][title='facebook'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+warning a.btn.btn-social.twitter[href='https://twitter.com/openstax'][title='twitter'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+warning a.btn.btn-social.linkedin[href='https://www.linkedin.com/company/openstax'][title='linkedin'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+undefined undefined undefined
 ```
 

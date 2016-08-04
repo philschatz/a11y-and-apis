@@ -95,18 +95,27 @@ test.afterEach(async t => {
 
     var callback = function() {
       var messages = window.HTMLCS.getMessages()
+      var alreadyMarkedErrors = {};
       var messagesWithSelectorsInsteadOfElements = messages.map(function(msg) {
         var type = msg.type;
         var element = msg.element;
         var code = msg.code;
         var data = msg.data;
-        // remove any border, because generateSelector will use the style attribute
-        if (element && element.style) {
-          delete element.style.border;
-        }
         var selector = generateSelector(element);
-        if (element && element.style) {
-          element.style.border = '2px solid rgb(255, 0, 0)';
+        if (!alreadyMarkedErrors[selector]) {
+          if (element && element.style) {
+            if (type === 1) {
+              // ERROR (red)
+              element.style.border = '2px solid rgb(255, 0, 0)';
+              alreadyMarkedErrors[selector] = true;
+            } else if (type === 2) {
+              // WARNING (yellow)
+              element.style.border = '2px solid rgb(255, 255, 0)';
+            } else {
+              // NOTE
+            }
+          }
+
         }
         return {
           type: type,
@@ -119,11 +128,11 @@ test.afterEach(async t => {
       cb(messagesWithSelectorsInsteadOfElements);
     };
     var failCallback = callback;
-    window.HTMLCS.process('WCAG2A', window.document, callback, failCallback);
+    window.HTMLCS.process('WCAG2AAA', window.document, callback, failCallback);
   });
   // remove all the notices and just show warnings and errors
   wcagMessages = wcagMessages.filter(({type}) => type === 1 || type === 2);
-  console.log('WCAG2A_ERRORS', wcagMessages.length);
+  console.log('WCAG2AAA_ERRORS', wcagMessages.length);
 
 
   // only run when test was successful because phantomjs could have failed earlier
@@ -157,7 +166,7 @@ ${JSON.stringify(simplifiedJson, null, 2)}
 
 ${entries.join('\n')}
 
-# WCAG2A Errors
+# WCAG2AAA Errors
 
 Showing first 50 of ${wcagMessages.length} errors
 

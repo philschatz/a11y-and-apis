@@ -31,61 +31,61 @@
 ```
 
 
-# WCAG2A Errors
+# WCAG2AAA Errors
 
-Showing first 50 of 53 errors
+Showing first 50 of 190 errors
 
 ```
-ERROR img[src='/images/about-us/Mary.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Mike.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Britney.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Kevin.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Beth.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Larissa.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Jeff.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Nicole.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Greg.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Kathi.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Derek.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Denver.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Phil G.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Michael.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Rich.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Jason.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Chris H.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Roy.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Alana.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Fred.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Helene.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Micaela.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Robert.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Dani.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Chris N.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Linda.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Kajal.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Bruce.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Courtney.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Ross.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Tim.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Phil S.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Heather.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Amanda.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Alina.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Kerwin.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Dante.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Ryan.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Tory.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Andrew.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Daniel.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Dennis.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Ed.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/Norm.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/s-badger.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/s-burrus.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/e-johnson.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/r-maxfield.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/s-schwanauer.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/w-sick.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR img[src='/images/about-us/Kerwin.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
+ERROR img[src='/images/about-us/Dante.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
+ERROR img[src='/images/about-us/Ryan.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
+ERROR div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
+ERROR div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
+ERROR div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR img[src='/images/about-us/Tory.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
+ERROR img[src='/images/about-us/Andrew.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
+ERROR img[src='/images/about-us/Daniel.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
+ERROR img[src='/images/about-us/Dennis.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
+ERROR div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR img[src='/images/about-us/Ed.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
+ERROR img[src='/images/about-us/Norm.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
+ERROR img[src='/images/about-us/s-badger.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='/images/about-us/s-burrus.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='/images/about-us/e-johnson.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='/images/about-us/r-maxfield.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='/images/about-us/s-schwanauer.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='/images/about-us/w-sick.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
+ERROR div.hero-quote WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR span.narrow-block WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
+ERROR a[href='/license'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/tos'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/accessibility-statement'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='https://github.com/openstax'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR a[href='/contact'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a.btn.btn-social.facebook[href='https://www.facebook.com/openstax'][title='facebook'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+warning a.btn.btn-social.twitter[href='https://twitter.com/openstax'][title='twitter'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+warning a.btn.btn-social.linkedin[href='https://www.linkedin.com/company/openstax'][title='linkedin'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
 undefined undefined undefined
 ```
 

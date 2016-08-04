@@ -194,61 +194,61 @@
 ```
 
 
-# WCAG2A Errors
+# WCAG2AAA Errors
 
-Showing first 50 of 87 errors
+Showing first 50 of 1676 errors
 
 ```
-warning label[for='76-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='76-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='76-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='76-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='77-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='77-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='77-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='77-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='78-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='78-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='78-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='78-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='53-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='53-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='53-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='53-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='54-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='54-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='54-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='54-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='79-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='79-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='79-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='79-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='42-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='42-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='42-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='42-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='43-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='43-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='43-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='43-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='44-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='44-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='44-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='44-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='45-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='45-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='45-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='45-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='46-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='46-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='46-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='46-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='48-option-0'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='48-option-1'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='48-option-2'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-warning label[for='48-option-3'].answer-label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
-ERROR a.page-navigation.next[href='/qa/1/section/2.2'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
-ERROR a[href='#spy'].debug-toggle-link WCAG2A.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[target='_blank'].edit-link[href='https://exercises-dev.openstax.org/exercises/46@draft'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[target='_blank'].edit-link[href='https://exercises-dev.openstax.org/exercises/46@draft'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[target='_blank'].edit-link[href='https://exercises-dev.openstax.org/exercises/46@draft'] WCAG2AAA.Principle3.Guideline3_2.3_2_5.H83.3
+warning label[for='48-option-0'].answer-label WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+ERROR span.openstax-has-html.answer-content WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR div.openstax-has-html.question-feedback-content.has-html WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning label[for='48-option-1'].answer-label WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+ERROR div.openstax-has-html.question-feedback-content.has-html WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning label[for='48-option-2'].answer-label WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+ERROR div.openstax-has-html.question-feedback-content.has-html WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning label[for='48-option-3'].answer-label WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+ERROR div.openstax-has-html.question-feedback-content.has-html WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR div.header WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR div.openstax-has-html.solution WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.lo-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+ERROR span.exercise-tag WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[target='_blank'].edit-link[href='https://exercises-dev.openstax.org/exercises/48@draft'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Abs
+ERROR a[target='_blank'].edit-link[href='https://exercises-dev.openstax.org/exercises/48@draft'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
+warning a[target='_blank'].edit-link[href='https://exercises-dev.openstax.org/exercises/48@draft'] WCAG2AAA.Principle3.Guideline3_2.3_2_5.H83.3
+ERROR a.page-navigation.next[href='/qa/1/section/2.2'] WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent
+ERROR a[href='#spy'].debug-toggle-link WCAG2AAA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID
 undefined undefined undefined
 ```
 
