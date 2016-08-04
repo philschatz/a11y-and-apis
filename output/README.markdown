@@ -20,5 +20,5 @@ Some examples:
 
 - [Home Page](./cnx.org.md)
 - [Contents Page](./cnx.org_contents_{uuid}.md)
-- [Search Results](./cnx.org_search\?q={searchText}.md)
+- [Search Results](./cnx.org_search%3Fq={searchText}.md)
 - [Donate Page](./cnx.org_donate.md)
