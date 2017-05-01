@@ -2,90 +2,106 @@
 
 ![image](./screenshots/openstax.org_about-us.png)
 
-# AJAX Calls
-
-## GET https://openstax.org/api/v1/pages?type=news.NewsArticle&fields=slug%2Ctitle%2Cdate%2Cauthor%2Cpin_to_top%2Csubheading%2Cbody%2Carticle_image
-
-```json
-{
-  "meta": {
-    "total_count": 0
-  },
-  "pages": []
-}
-```
-
-## GET https://openstax.org/api/user/
-
-```json
-[
-  {
-    "accounts_id": null,
-    "groups": [],
-    "is_staff": false,
-    "is_superuser": false,
-    "pending_verification": false,
-    "username": ""
-  }
-]
-```
-
-
 # WCAG2AAA Errors
 
-Showing first 50 of 190 errors
+Showing first 50 of 60 errors
 
 ```
-ERROR div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
-ERROR img[src='/images/about-us/Kerwin.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
-ERROR img[src='/images/about-us/Dante.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
-ERROR img[src='/images/about-us/Ryan.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
-ERROR div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
-ERROR div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
-ERROR div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
-ERROR img[src='/images/about-us/Tory.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
-ERROR img[src='/images/about-us/Andrew.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
-ERROR img[src='/images/about-us/Daniel.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
-ERROR img[src='/images/about-us/Dennis.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Abs
-ERROR div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
-ERROR img[src='/images/about-us/Ed.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
-ERROR img[src='/images/about-us/Norm.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-warning div.name WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.BgImage
-ERROR img[src='/images/about-us/s-badger.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/s-burrus.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/e-johnson.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/r-maxfield.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/s-schwanauer.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='/images/about-us/w-sick.png'] WCAG2AAA.Principle1.Guideline1_1.1_1_1.H37
-ERROR div.hero-quote WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
-ERROR span.narrow-block WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail
-ERROR a[href='/license'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
-ERROR a[href='/tos'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
-ERROR a[href='/accessibility-statement'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
-ERROR a[href='https://github.com/openstax'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
-ERROR a[href='/contact'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
-ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
-ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
-ERROR p WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
-ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
-ERROR sup WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail
-warning a.btn.btn-social.facebook[href='https://www.facebook.com/openstax'][title='facebook'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
-warning a.btn.btn-social.twitter[href='https://twitter.com/openstax'][title='twitter'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
-warning a.btn.btn-social.linkedin[href='https://www.linkedin.com/company/openstax'][title='linkedin'] WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Britney3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Bonne3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Kevin.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Beth.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Larissa3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Alan.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Jeff.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Maher.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Nicole.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Greg.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Kathi.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Derek.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Jessica3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Meera3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Denver.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Phil-G.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/David.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Michael3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Chris-H.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Roy.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Keith3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Andrew_L3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Alana.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Fred_Lindner_3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Helene.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Micaela3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Robert3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Dani.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Kajal.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Bruce3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Courtney.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Ross.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Tim.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Zach.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Phil-S.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Amanda.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Alina.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Kerwin.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Dante.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Ryan.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Britt.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Daniel.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Dennis.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Ed.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Norm.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/s-badger_1.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/c-s-burrus.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/e-c-johnson.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/r-maxfield_1.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/w-n-sick.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
 undefined undefined undefined
 ```
+
+# AJAX Calls
+
+## GET https://openstax.org/api/user
+
+```json
+null
+```
+
+## GET https://openstax.org/api/sticky
+
+```json
+null
+```
+
+## GET https://openstax.org/api/documents?search=press%20kit
+
+```json
+null
+```
+
+## GET https://openstax.org/api/news
+
+```json
+null
+```
+
+## GET https://openstax.org/api/user_salesforce
+
+```json
+null
+```
+
+## GET https://openstax.org/api/pages/about-us
+
+```json
+null
+```
+
+## GET https://openstax.org/api/books
+
+```json
+null
+```
+
 

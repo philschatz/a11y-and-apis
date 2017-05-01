@@ -8,6 +8,7 @@ import codeSnifferCode from './_code-sniffer-code';
 
 // import {listenToAjax} from './_xhr-helper'; // read it from fs because babel inje
 
+const ACCESSIBILITY_LEVEL = 'WCAG2A';
 const DEFAULT_TIMEOUT = 30 * 1000; // wait 10sec before failing a test (change this if doing performance tests)
 const WINDOW_WIDTH = 1024;
 const WINDOW_HEIGHT = 768;
@@ -16,8 +17,8 @@ const SCREENSHOT_DIRNAME = 'screenshots'
 const SCREENSHOT_PATH = path.join(OUTPUT_PATH, SCREENSHOT_DIRNAME);
 
 const builder = new selenium.Builder()
-  .withCapabilities(selenium.Capabilities.chrome());
-  // .withCapabilities(selenium.Capabilities.phantomjs());
+  // .withCapabilities(selenium.Capabilities.chrome());
+  .withCapabilities(selenium.Capabilities.phantomjs());
 
 const listenToAjax = fs.readFileSync(path.join(__dirname, '_xhr-helper.js'), 'utf8');
 
@@ -72,6 +73,7 @@ test.afterEach(async t => {
   await t.context.driver.executeAsyncScript(codeSnifferCode);
   let wcagMessages = await t.context.driver.executeAsyncScript(function() {
     // Standards can be found in https://github.com/squizlabs/HTML_CodeSniffer/tree/master/Standards
+    var ACCESSIBILITY_LEVEL = arguments[0];
     var cb = arguments[arguments.length - 1];
 
     function generateSelector(target) {
@@ -128,11 +130,11 @@ test.afterEach(async t => {
       cb(messagesWithSelectorsInsteadOfElements);
     };
     var failCallback = callback;
-    window.HTMLCS.process('WCAG2AAA', window.document, callback, failCallback);
-  });
+    window.HTMLCS.process(ACCESSIBILITY_LEVEL, window.document, callback, failCallback);
+  }, ACCESSIBILITY_LEVEL);
   // remove all the notices and just show warnings and errors
   wcagMessages = wcagMessages.filter(({type}) => type === 1 || type === 2);
-  console.log('WCAG2AAA_ERRORS', wcagMessages.length);
+  console.log(`${ACCESSIBILITY_LEVEL}_ERRORS`, wcagMessages.length);
 
 
   // only run when test was successful because phantomjs could have failed earlier
@@ -162,10 +164,6 @@ ${JSON.stringify(simplifiedJson, null, 2)}
 
 ![image](./${SCREENSHOT_DIRNAME}/${filename}.png)
 
-# AJAX Calls
-
-${entries.join('\n')}
-
 # WCAG2AAA Errors
 
 Showing first 50 of ${wcagMessages.length} errors
@@ -182,6 +180,10 @@ ${simplifyJson(wcagMessages, 50).map(({type, selector, code}) => {
   return type + ' ' + selector + ' ' + code;
 }).join('\n')}
 \`\`\`
+
+# AJAX Calls
+
+${entries.join('\n')}
 
 `;
 
