@@ -8,7 +8,7 @@ test.serial(macro, 'https://cnx.org/contents', 'Welcome to the OpenStax CNX Libr
 test.serial(macro, 'https://cnx.org/tos',      'OpenStax CNX Service and Repository User Agreement');
 test.serial(macro, 'https://cnx.org/about',    'How it works');
 test.serial(macro, 'https://cnx.org/donate',   'Your donation makes a difference');
-test.serial(macro, 'https://cnx.org/license',  'Frequently asked IP (Intellectual Property) and legal questions');
+test.serial(macro, 'https://cnx.org/license',  'Legal');
 test.serial(macro, 'https://cnx.org/search',   'Advanced Search');
 
 test.serial(macro, 'http://cnx.org/search?q={searchText}', 'results found', {searchText: 'SELENIUM_NO_RESULTS'});
