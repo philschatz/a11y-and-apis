@@ -5,7 +5,7 @@ Some examples:
 # Openstax
 
 - [Home page](./openstax.org.md)
-- [Physics Details](./openstax.org_details_university-physics.md)
+- [Physics Details](./output/openstax.org_details_books_university-physics-volume-1.md)
 
 
 # Tutor

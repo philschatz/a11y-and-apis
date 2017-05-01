@@ -4,7 +4,7 @@
 
 # WCAG2AAA Errors
 
-Showing first 50 of 146 errors
+Showing first 50 of 145 errors
 
 ```
 warning div.option WCAG2A.Principle1.Guideline1_3.1_3_1.H48
@@ -62,7 +62,7 @@ undefined undefined undefined
 
 # AJAX Calls
 
-## GET https://openstax.org/api/user
+## GET https://openstax.org/api/sticky
 
 ```json
 null
@@ -74,7 +74,7 @@ null
 null
 ```
 
-## GET https://openstax.org/api/sticky
+## GET https://openstax.org/api/user
 
 ```json
 null

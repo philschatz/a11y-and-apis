@@ -22,7 +22,7 @@ warning h3 WCAG2A.Principle1.Guideline1_3.1_3_1_A.G141
 
 # AJAX Calls
 
-## GET https://openstax.org/api/sticky
+## GET https://openstax.org/api/documents?search=press%20kit
 
 ```json
 null
@@ -34,7 +34,7 @@ null
 null
 ```
 
-## GET https://openstax.org/api/documents?search=press%20kit
+## GET https://openstax.org/api/sticky
 
 ```json
 null
@@ -46,13 +46,13 @@ null
 null
 ```
 
-## GET https://openstax.org/api/user_salesforce
+## GET https://openstax.org/api/books
 
 ```json
 null
 ```
 
-## GET https://openstax.org/api/books
+## GET https://openstax.org/api/user_salesforce
 
 ```json
 null
