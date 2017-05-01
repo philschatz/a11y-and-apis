@@ -17,8 +17,8 @@ const SCREENSHOT_DIRNAME = 'screenshots'
 const SCREENSHOT_PATH = path.join(OUTPUT_PATH, SCREENSHOT_DIRNAME);
 
 const builder = new selenium.Builder()
-  // .withCapabilities(selenium.Capabilities.chrome());
-  .withCapabilities(selenium.Capabilities.phantomjs());
+  .withCapabilities(selenium.Capabilities.chrome());
+  // .withCapabilities(selenium.Capabilities.phantomjs());
 
 const listenToAjax = fs.readFileSync(path.join(__dirname, '_xhr-helper.js'), 'utf8');
 

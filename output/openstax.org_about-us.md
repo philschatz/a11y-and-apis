@@ -4,12 +4,9 @@
 
 # WCAG2AAA Errors
 
-Showing first 50 of 60 errors
+Showing first 50 of 62 errors
 
 ```
-ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Britney3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Bonne3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
-ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Kevin.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
 ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Beth.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
 ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Larissa3.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
 ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/Alan.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
@@ -57,51 +54,13 @@ ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/origina
 ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/e-c-johnson.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
 ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/r-maxfield_1.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
 ERROR img[src='https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/original_images/w-n-sick.png'] WCAG2A.Principle1.Guideline1_1.1_1_1.H37
+ERROR li.nav-menu-item.dropdown[role='presentation'] WCAG2A.Principle1.Guideline1_3.1_3_1.F92,ARIA4
+ERROR li[role='presentation'] WCAG2A.Principle1.Guideline1_3.1_3_1.F92,ARIA4
+ERROR li.nav-menu-item.dropdown[role='presentation'] WCAG2A.Principle1.Guideline1_3.1_3_1.F92,ARIA4
 undefined undefined undefined
 ```
 
 # AJAX Calls
 
-## GET https://openstax.org/api/user
-
-```json
-null
-```
-
-## GET https://openstax.org/api/sticky
-
-```json
-null
-```
-
-## GET https://openstax.org/api/documents?search=press%20kit
-
-```json
-null
-```
-
-## GET https://openstax.org/api/news
-
-```json
-null
-```
-
-## GET https://openstax.org/api/user_salesforce
-
-```json
-null
-```
-
-## GET https://openstax.org/api/pages/about-us
-
-```json
-null
-```
-
-## GET https://openstax.org/api/books
-
-```json
-null
-```
 
 

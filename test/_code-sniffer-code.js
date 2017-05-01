@@ -2,6 +2,9 @@ import fs from 'fs';
 import path from 'path';
 
 let codeSnifferCode = fs.readFileSync(path.join(__dirname, '..', 'node_modules/HTML_CodeSniffer/build/HTMLCS.js'), 'utf8');
+// disable AMD loading because JSPM will error
+codeSnifferCode = `window.__define2 = window.define; delete window.define; ${codeSnifferCode}; window.define = window.__define2; delete window.__define2`;
+
 codeSnifferCode += "\n; window.HTMLCS = HTMLCS;";
 codeSnifferCode += `
 window.HTMLCS_Section508_Sniffs_A = HTMLCS_Section508_Sniffs_A;

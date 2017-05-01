@@ -4,61 +4,21 @@
 
 # WCAG2AAA Errors
 
-Showing first 50 of 8 errors
+Showing first 50 of 9 errors
 
 ```
 ERROR iframe[src='https://a7893320024.cdn.optimizely.com/client_storage/a7893320024.html'] WCAG2A.Principle2.Guideline2_4.2_4_1.H64.1
+ERROR iframe[src='https://7893320024.cdn.optimizely.com/client_storage/7893320024.html'] WCAG2A.Principle2.Guideline2_4.2_4_1.H64.1
 warning div.multi-button WCAG2A.Principle1.Guideline1_3.1_3_1.H48
-ERROR button.expand[type='button'][role='button'][aria-haspopup='true'][aria-label='Toggle Meta Navigation Menu'][tabindex='0'] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.Button.Name
-warning img.strips[src='/images/components/strips.svg'][height='10'][alt=''][role='presentation'] WCAG2A.Principle1.Guideline1_1.1_1_1.H67.2
 ERROR iframe[name='form-response']#form-response[src=''][width='0'][height='0'] WCAG2A.Principle2.Guideline2_4.2_4_1.H64.1
-warning label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
 warning select[name='subject'] WCAG2A.Principle1.Guideline1_3.1_3_1.H85.2
-warning label WCAG2A.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment
+ERROR input[name='email'][type='email'][required=''] WCAG2A.Principle4.Guideline4_1.4_1_2.H91.InputEmail.Name
+ERROR li.nav-menu-item.dropdown[role='presentation'] WCAG2A.Principle1.Guideline1_3.1_3_1.F92,ARIA4
+ERROR li[role='presentation'] WCAG2A.Principle1.Guideline1_3.1_3_1.F92,ARIA4
+ERROR li.nav-menu-item.dropdown[role='presentation'] WCAG2A.Principle1.Guideline1_3.1_3_1.F92,ARIA4
 ```
 
 # AJAX Calls
 
-## GET https://openstax.org/api/documents?search=press%20kit
-
-```json
-null
-```
-
-## GET https://openstax.org/api/sticky
-
-```json
-null
-```
-
-## GET https://openstax.org/api/user
-
-```json
-null
-```
-
-## GET https://openstax.org/api/news
-
-```json
-null
-```
-
-## GET https://openstax.org/api/user_salesforce
-
-```json
-null
-```
-
-## GET https://openstax.org/api/pages/contact-us
-
-```json
-null
-```
-
-## GET https://openstax.org/api/books
-
-```json
-null
-```
 
 
