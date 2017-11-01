@@ -40,12 +40,12 @@ const urls = globby.sync(cli.input, {
 }).map(protocolify);
 
 eachAsync(urls, (url, i, next) => {
-    a11y(url, cli.flags, (err, reports) => {
-        if (err) {
-            console.error(err.message);
-            process.exit(err.code || 1);
-        }
-
+    a11y(url, cli.flags)
+    .catch(err => {
+        console.error(err.message);
+        process.exit(err.code || 1);
+    })
+    .then(reports => {
         if (cli.flags.verbose) {
             console.log(reports);
             return;

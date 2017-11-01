@@ -1,47 +1,67 @@
 'use strict';
-const path = require('path');
-const execFile = require('child_process').execFile;
-const phantomjs = require('phantomjs-prebuilt');
-const protocolify = require('protocolify');
-const parseJson = require('parse-json');
+const fs = require('fs');
+const puppeteer = require('puppeteer');
 
-module.exports = (url, opts, cb) => {
-    if (typeof opts !== 'object') {
-        cb = opts;
-        opts = {};
-    }
+const TOOLS_PATH = require.resolve('accessibility-developer-tools/dist/js/axs_testing');
 
-    opts = opts || {};
-
-    if (typeof cb !== 'function') {
-        throw new TypeError('Callback required');
-    }
-
+module.exports = async (url, opts) => {
     if (!(url && url.length > 0)) {
         throw new Error('Specify at least one URL');
     }
+    opts = opts || {};
 
     const viewportSize = (opts.viewportSize || '').split('x');
     delete opts.viewportSize;
 
     opts = Object.assign({delay: 1}, opts, {
-        url: protocolify(url),
         width: viewportSize[0] || 1024,
         height: viewportSize[1] || 768
     });
 
-    execFile(phantomjs.path, [
-        path.join(__dirname, 'audits.js'),
-        JSON.stringify(opts),
-        '--ignore-ssl-errors=true',
-        '--ssl-protocol=tlsv1',
-        '--local-to-remote-url-access=true'
-    ], (err, stdout) => {
-        if (err) {
-            cb(err);
-            return;
-        }
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    await page.goto(url, {waitUntil: 'networkidle'});
+    // Inject the window.axs package
+    await page.evaluate(`(function () { ${fs.readFileSync(TOOLS_PATH)} })()`);
 
-        cb(null, parseJson(stdout));
+    const results = await page.evaluate(() => {
+        // This runs in the browser which now has access to window.axs
+        const axs = window.axs; // eslint-disable-line no-undef
+        const results = axs.Audit.run();
+        const audit = results.map(function (result) {
+            const DOMElements = result.elements;
+            var message = '';
+
+            if (DOMElements !== undefined) {
+                for (var i = 0; i < DOMElements.length; i++) {
+                    var el = DOMElements[i];
+                    message += '\n';
+                    // Get query selector not browser independent. catch any errors and
+                    // default to simple tagName.
+                    try {
+                        message += axs.utils.getQuerySelectorText(el);
+                    } catch (err) {
+                        message += ' tagName:' + el.tagName;
+                        message += ' id:' + el.id;
+                    }
+                }
+            }
+
+            return {
+                code: result.rule.code,
+                heading: result.rule.heading,
+                result: result.result,
+                severity: result.rule.severity,
+                url: result.rule.url,
+                elements: message
+            };
+        });
+
+        return {
+            audit: audit,
+            report: axs.Audit.createReport(results)
+        };
     });
+    await browser.close();
+    return results;
 };

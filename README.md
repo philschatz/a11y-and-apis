@@ -103,10 +103,9 @@ Audit a remote URL and generate an accessibility report:
 ```js
 const a11y = require('a11y');
 
-a11y('twitter.com', (err, reports) => {
-    const audit = reports.audit; // `a11y` Formatted report
-    const report = reports.report; // DevTools Accessibility Audit formatted report
-});
+const reports = await a11y('twitter.com');
+const audit = reports.audit; // `a11y` Formatted report
+const report = reports.report; // DevTools Accessibility Audit formatted report
 ```
 
 Work with the output of `reports.audit`:
@@ -114,16 +113,15 @@ Work with the output of `reports.audit`:
 ```js
 const a11y = require('a11y');
 
-a11y('twitter.com', (err, reports) => {
-    for (const report of reports) {
-        // Result will be PASS, FAIL or NA
-        if (report.result === 'FAIL') {
-            // el.heading
-            // el.severity
-            // el.elements
-        }
+const reports = a11y('twitter.com');
+for (const report of reports) {
+    // Result will be PASS, FAIL or NA
+    if (report.result === 'FAIL') {
+        // el.heading
+        // el.severity
+        // el.elements
     }
-});
+}
 ```
 
 Passing options:
@@ -135,9 +133,8 @@ const options = {
     viewportSize: '800x600'
 };
 
-a11y('twitter.com', options, (err, reports) => {
-    // ...
-});
+const reports = await a11y('twitter.com', options);
+// ...
 ```
 
 Currently, the only suported option is:
